@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CFR-website/static/css/main.0af9ef0a.css",
-    "main.js": "/CFR-website/static/js/main.b06387d8.js",
+    "main.js": "/CFR-website/static/js/main.332d771f.js",
     "static/media/galerie.jpg": "/CFR-website/static/media/galerie.524dc48d34472d32802e.jpg",
     "static/media/slick.svg": "/CFR-website/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/CFR-website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,10 +9,10 @@
     "static/media/slick.woff": "/CFR-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/CFR-website/index.html",
     "main.0af9ef0a.css.map": "/CFR-website/static/css/main.0af9ef0a.css.map",
-    "main.b06387d8.js.map": "/CFR-website/static/js/main.b06387d8.js.map"
+    "main.332d771f.js.map": "/CFR-website/static/js/main.332d771f.js.map"
   },
   "entrypoints": [
     "static/css/main.0af9ef0a.css",
-    "static/js/main.b06387d8.js"
+    "static/js/main.332d771f.js"
   ]
 }
