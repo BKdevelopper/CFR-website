@@ -59,3 +59,8 @@
 .interested-button:hover {
   background-color: #ed7703;
 }
+@media screen and (max-width: 1280px) {
+  .popup-container {
+    display: none;
+  }
+}
