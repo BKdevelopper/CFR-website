@@ -28,7 +28,11 @@ const House = () => {
         </h3>
       </div>
       <div className="container-house-img">
-        <img src="/img/maison.png" className="maison" alt="" />
+        <img
+          src="https://bkdevelopper.github.io/CFR-website/img/maison.png"
+          className="maison"
+          alt=""
+        />
       </div>
     </div>
   )

@@ -28,7 +28,7 @@ const Informations = () => {
         <div className="container-information-zone-left">
           <div className="container-information-zone-left-top">
             <img
-              src="/img/icon/photovoltaique.png"
+              src="https://bkdevelopper.github.io/CFR-website/img/icon/photovoltaique.png"
               alt=" "
               className="information-img"
             />
@@ -39,7 +39,7 @@ const Informations = () => {
           </div>
           <div className="container-information-zone-left-bottom">
             <img
-              src="/img/icon/isolation.png"
+              src="https://bkdevelopper.github.io/CFR-website/img/icon/isolation.png"
               alt=" "
               className="information-img"
             />
@@ -50,7 +50,7 @@ const Informations = () => {
         <div className="container-information-zone-middle">
           <div className="container-information-zone-middle-top">
             <img
-              src="/img/icon/climatisation.png"
+              src="https://bkdevelopper.github.io/CFR-website/img/icon/climatisation.png"
               alt=" "
               className="information-img"
             />
@@ -59,7 +59,7 @@ const Informations = () => {
           </div>
           <div className="container-information-zone-middle-bottom">
             <img
-              src="/img/icon/pompe.png"
+              src="https://bkdevelopper.github.io/CFR-website/img/icon/pompe.png"
               alt=" "
               className="information-img"
             />
@@ -72,7 +72,7 @@ const Informations = () => {
         <div className="container-information-zone-right">
           <div className="container-information-zone-right-top">
             <img
-              src="/img/icon/thermodynamique.png"
+              src="https://bkdevelopper.github.io/CFR-website/img/icon/thermodynamique.png"
               alt=" "
               className="information-img"
             />
@@ -81,7 +81,7 @@ const Informations = () => {
           </div>
           <div className="container-information-zone-right-bottom">
             <img
-              src="/img/icon/chiffre.png"
+              src="https://bkdevelopper.github.io/CFR-website/img/icon/chiffre.png"
               alt=" "
               className="information-img"
             />

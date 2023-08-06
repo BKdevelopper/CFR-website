@@ -48,21 +48,21 @@ const PhotoGallery = () => {
   }
 
   const image = [
-    '/img/photo1.jpeg',
-    '/img/photo2.jpeg',
-    '/img/photo3.jpeg',
-    '/img/photo4.jpeg',
-    '/img/photo5.jpeg',
-    '/img/photo6.jpeg',
-    '/img/photo7.jpeg',
-    '/img/photo8.jpeg',
-    '/img/photo9.jpeg',
-    '/img/photo10.jpeg',
-    '/img/photo11.jpeg',
-    '/img/photo12.jpeg',
-    '/img/photo13.jpeg',
-    '/img/photo14.jpeg',
-    '/img/photo15.jpeg',
+    'https://bkdevelopper.github.io/CFR-website/img/photo1.jpeg',
+    'https://bkdevelopper.github.io/CFR-website/img/photo2.jpeg',
+    'https://bkdevelopper.github.io/CFR-website/img/photo3.jpeg',
+    'https://bkdevelopper.github.io/CFR-website/img/photo4.jpeg',
+    'https://bkdevelopper.github.io/CFR-website/img/photo5.jpeg',
+    'https://bkdevelopper.github.io/CFR-website/img/photo6.jpeg',
+    'https://bkdevelopper.github.io/CFR-website/img/photo7.jpeg',
+    'https://bkdevelopper.github.io/CFR-website/img/photo8.jpeg',
+    'https://bkdevelopper.github.io/CFR-website/img/photo9.jpeg',
+    'https://bkdevelopper.github.io/CFR-website/img/photo10.jpeg',
+    'https://bkdevelopper.github.io/CFR-website/img/photo11.jpeg',
+    'https://bkdevelopper.github.io/CFR-website/img/photo12.jpeg',
+    'https://bkdevelopper.github.io/CFR-website/img/photo13.jpeg',
+    'https://bkdevelopper.github.io/CFR-website/img/photo14.jpeg',
+    'https://bkdevelopper.github.io/CFR-website/img/photo15.jpeg',
   ]
 
   const openModal = (img) => {

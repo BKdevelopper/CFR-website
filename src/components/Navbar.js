@@ -29,7 +29,11 @@ function Navbar() {
       }}
     >
       <div className="navbar">
-        <img src="/img/logo white.png" className="logo" alt="" />
+        <img
+          src="https://bkdevelopper.github.io/CFR-website/img/logo white.png"
+          className="logo"
+          alt=""
+        />
         <nav ref={navRef}>
           <a href="/#">Accueil</a>
           <a href="/#">Votre projet en 5 étapes</a>

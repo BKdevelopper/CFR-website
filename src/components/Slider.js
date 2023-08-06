@@ -11,18 +11,18 @@ const Slider = () => {
 
   const images = [
     {
-      src: '/img/galery1.jpg',
+      src: 'https://bkdevelopper.github.io/CFR-website/img/galery1.jpg',
       alt: 'Image 1',
       caption:
         "Économisez de l'argent tout en réduisant votre empreinte carbone",
     },
     {
-      src: '/img/galery2.jpg',
+      src: 'https://bkdevelopper.github.io/CFR-website/img/galery2.jpg',
       alt: 'Image 2',
       caption: 'Transformez votre maison en un habitat éco-énergétique',
     },
     {
-      src: '/img/galery3.jpg',
+      src: 'https://bkdevelopper.github.io/CFR-website/img/galery3.jpg',
       alt: 'Image 3',
       caption: "Améliorez votre confort tout en préservant l'environnement",
     },

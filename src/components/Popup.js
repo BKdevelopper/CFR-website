@@ -25,7 +25,7 @@ const Popup = () => {
         </button>
         {/* Contenu de votre popup publicitaire */}
         <img
-          src="/img/pub.png"
+          src="https://bkdevelopper.github.io/CFR-website/img/pub.png"
           alt="Popup Publicitaire"
           className="popup-image"
         />
