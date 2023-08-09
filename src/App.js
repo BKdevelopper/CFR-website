@@ -10,6 +10,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<Accueil />} />
+          <Route path="/" element={<Accueil />} />
           <Route path="/acceuil" element={<Accueil />} />
           <Route path="/mention-legal" element={<Mention />} />
           <Route path="/maintenance" element={<Maintenance />} />
