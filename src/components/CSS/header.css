@@ -13,31 +13,26 @@
   --secondaryColor: #db2b39;
   --textColor: #eee;
 }
-.link-mention {
-  text-decoration: none;
-  color: white;
-}
-.header-nav {
+
+.header-nav1 {
   height: 120px;
   padding: 0 2rem;
-  /* background-color: var(--mainColor); */
+  background-color: var(--mainColor);
   color: var(--textColor);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 20;
-  position: fixed !important;
   width: 100%;
 }
-.header-fixed {
-  position: fixed !important;
+.header-fixed1 {
   left: 0;
   margin: auto;
   top: 0;
   width: 100%;
   animation: sticky 1s;
 }
-.navbar {
+.navbar1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,11 +48,11 @@ nav a {
 nav a:hover {
   color: var(--secondaryColor);
 }
-.navbar img {
+.navbar1 img {
   width: 100px;
   height: 100px;
 }
-header .nav-btn {
+header .nav-btn1 {
   padding: 5px;
   cursor: pointer;
   background: transparent;
@@ -74,7 +69,7 @@ nav {
   display: flex;
   align-items: center;
 }
-.navbar-contact-devis {
+.navbar-contact-devis1 {
   background-color: #ffffff;
   font-family: 'Proxima Bold', Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -95,7 +90,7 @@ nav {
   top: 32px;
   z-index: 20;
 }
-.navbar-contact-phone {
+.navbar-contact-phone1 {
   background-color: white;
   padding: 11px 18px 10px;
   font-size: 16px;
@@ -108,13 +103,13 @@ nav {
   text-decoration: none;
 }
 @media screen and (max-width: 1540px) {
-  .navbar-contact-phone {
+  .navbar-contact-phone1 {
     visibility: hidden;
   }
-  .navbar-contact-devis {
+  .navbar-contact-devis1 {
     visibility: hidden;
   }
-  header .nav-btn {
+  header .nav-btn1 {
     visibility: visible;
     opacity: 1;
   }
@@ -122,11 +117,10 @@ nav {
   nav {
     display: none;
   }
-  .navbar {
+  .navbar1 {
     width: 100%;
   }
   header nav {
-    position: fixed;
     top: -100vh;
     left: 0;
     height: 100%;
@@ -141,11 +135,11 @@ nav {
     transition: 1s;
   }
 
-  header .responsive_nav {
+  header .responsive_nav1 {
     transform: translateY(100vh);
   }
 
-  nav .nav-close-btn {
+  nav .nav-close-btn1 {
     position: absolute;
     top: 2rem;
     right: 2rem;

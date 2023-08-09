@@ -8,7 +8,7 @@ import {
   FiLinkedin,
 } from 'react-icons/fi'
 import './CSS/footer.css'
-
+import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <footer className="footer-container">
@@ -43,7 +43,7 @@ const Footer = () => {
             </li>
             <li>
               <FiPhone />
-              <a href="tel:+661990349">06 61 99 03 49</a>
+              <a href="tel:+763626188">07 63 62 61 88</a>
             </li>
             <li>
               <FiMapPin />
@@ -91,7 +91,12 @@ const Footer = () => {
       </div>
 
       <div className="legal-section">
-        <p>&copy; {new Date().getFullYear()} CFR - Mentions légales</p>
+        <p>
+          &copy; {new Date().getFullYear()} CFR -{' '}
+          <Link className="link-mention" to="/mention-legal">
+            Mentions légales
+          </Link>
+        </p>
       </div>
     </footer>
   )

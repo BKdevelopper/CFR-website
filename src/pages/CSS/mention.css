@@ -1,0 +1,52 @@
+.article-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for section headings */
+h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style for paragraphs */
+p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Style for bold text */
+b {
+  font-weight: bold;
+}
+
+/* Style for hyperlinks */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Add underline on hover for hyperlinks */
+a:hover {
+  text-decoration: underline;
+}
+h3 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+/* Style for unordered lists */
+ul {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style for list items */
+li {
+  line-height: 1.6;
+  margin-bottom: 5px;
+}
