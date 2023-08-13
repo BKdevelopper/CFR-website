@@ -43,21 +43,21 @@
   justify-content: space-between;
   width: 60%;
 }
-nav a {
+.navbar-ref a {
   margin: 0 1rem;
   color: var(--textColor);
   text-decoration: none;
   font-size: 16px;
 }
 
-nav a:hover {
+.navbar-ref a:hover {
   color: var(--secondaryColor);
 }
 .navbar img {
   width: 100px;
   height: 100px;
 }
-header .nav-btn {
+.header-nav .nav-btn {
   padding: 5px;
   cursor: pointer;
   background: transparent;
@@ -69,8 +69,8 @@ header .nav-btn {
   font-size: 1.8rem;
 }
 
-header div,
-nav {
+.header-nav div,
+.navbar-ref {
   display: flex;
   align-items: center;
 }
@@ -108,24 +108,30 @@ nav {
   text-decoration: none;
 }
 @media screen and (max-width: 1540px) {
+  .navbar {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
   .navbar-contact-phone {
     visibility: hidden;
   }
   .navbar-contact-devis {
     visibility: hidden;
   }
-  header .nav-btn {
+  .header-nav .nav-btn {
     visibility: visible;
     opacity: 1;
   }
-  header div,
-  nav {
+  .header-nav div,
+  .navbar-ref {
     display: none;
   }
   .navbar {
     width: 100%;
   }
-  header nav {
+  .header-nav .navbar-ref {
     position: fixed;
     top: -100vh;
     left: 0;
@@ -141,17 +147,17 @@ nav {
     transition: 1s;
   }
 
-  header .responsive_nav {
+  .header-nav .responsive_nav {
     transform: translateY(100vh);
   }
 
-  nav .nav-close-btn {
+  .navbar-ref .nav-close-btn {
     position: absolute;
     top: 2rem;
     right: 2rem;
   }
 
-  nav a {
+  .navbar-ref a {
     font-size: 1.5rem;
   }
 }

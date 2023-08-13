@@ -35,7 +35,7 @@ function Navbar() {
           className="logo"
           alt=""
         />
-        <nav ref={navRef}>
+        <nav className="navbar-ref" ref={navRef}>
           <Link to="/acceuil">Accueil</Link>
           <Link to="/maintenance">Votre projet en 5 étapes</Link>
           <Link to="/maintenance">Blog</Link>
