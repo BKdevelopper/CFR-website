@@ -1,11 +1,11 @@
 import React from 'react'
 import './CSS/maintenance.css'
-import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
 const Maintenance = () => {
   return (
     <>
-      <Header />
+      <Navbar scroll={false} />
       <div className="construction-message">
         <h2>Page en Cours de Construction</h2>
         <p>Nous travaillons dur pour vous apporter du contenu intéressant.</p>

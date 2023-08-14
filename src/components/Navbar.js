@@ -4,29 +4,73 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { BsTelephone } from 'react-icons/bs'
 import './CSS/navbar.css'
 import { Link } from 'react-router-dom'
-function Navbar() {
+
+function Navbar({ scroll }) {
   const navRef = useRef()
-  const [scrolled, setScrolled] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
   const showNavbar = () => {
     navRef.current.classList.toggle('responsive_nav')
   }
-
   useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 0
-      setScrolled(isScrolled)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => {
+    if (scroll) {
+      window.addEventListener('scroll', handleScroll)
+    } else {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [])
-  return (
+
+    return () => {
+      if (scroll) {
+        window.removeEventListener('scroll', handleScroll)
+      }
+    }
+  }, [scroll])
+
+  const handleScroll = () => {
+    setIsScrolled(window.scrollY > 0)
+  }
+
+  return scroll ? (
     <header
       className="header-nav"
       style={{
-        backgroundColor: scrolled ? '#ed7703' : 'transparent',
+        backgroundColor: isScrolled ? '#ed7703' : 'transparent',
+      }}
+    >
+      <div className="navbar">
+        <img
+          src="https://bkdevelopper.github.io/CFR-website/img/logo white.png"
+          className="logo"
+          alt=""
+        />
+        <nav className="navbar-ref" ref={navRef}>
+          <Link to="/acceuil">Accueil</Link>
+          <Link to="/maintenance">Votre projet en 5 étapes</Link>
+          <Link to="/maintenance">Blog</Link>
+          <Link to="/maintenance">Contact</Link>
+
+          <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+            <FaTimes />
+          </button>
+        </nav>
+        <div className="navbar-contact">
+          <div className="navbar-contact-devis">
+            Obtenir un devis ou un bilan énergétique gratuit
+          </div>
+          <a className="navbar-contact-phone" href="tel:0763626188">
+            {' '}
+            <BsTelephone /> 07 63 62 61 88
+          </a>
+        </div>
+      </div>
+      <button className="nav-btn" onClick={showNavbar}>
+        <FaBars />
+      </button>
+    </header>
+  ) : (
+    <header
+      className="header-nav"
+      style={{
+        backgroundColor: '#ed7703',
       }}
     >
       <div className="navbar">

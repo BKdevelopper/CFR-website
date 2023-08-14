@@ -76,7 +76,12 @@ const PhotoGallery = () => {
 
   return (
     <div className="carousels">
-      <h2>Nos réalisation</h2>
+      <div className="carousels-title section-title position-relative text-center">
+        <h6 className="carousels-title-projet text-uppercase mb-3">Projet</h6>
+        <h1 className="carousels-title-rea font-secondary display-4 text-white">
+          Nos réalisations
+        </h1>
+      </div>
       <Slider {...settings}>
         {image.map((photo, index) => (
           <div className="box" key={index}>

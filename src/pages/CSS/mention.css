@@ -7,14 +7,14 @@
 }
 
 /* Style for section headings */
-h2 {
+.mention-h2 {
   font-size: 24px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 /* Style for paragraphs */
-p {
+.mention-p {
   line-height: 1.6;
   margin-bottom: 10px;
 }
@@ -25,28 +25,28 @@ b {
 }
 
 /* Style for hyperlinks */
-a {
+.mention-a {
   color: #007bff;
   text-decoration: none;
 }
 
 /* Add underline on hover for hyperlinks */
-a:hover {
+.mention-a:hover {
   text-decoration: underline;
 }
-h3 {
+.mention-h3 {
   font-size: 20px;
   margin-top: 15px;
   margin-bottom: 10px;
 }
 /* Style for unordered lists */
-ul {
+.mention-ul {
   margin-left: 20px;
   margin-bottom: 10px;
 }
 
 /* Style for list items */
-li {
+.mention-li {
   line-height: 1.6;
   margin-bottom: 5px;
 }

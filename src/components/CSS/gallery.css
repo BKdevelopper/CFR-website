@@ -1,15 +1,9 @@
 .carousels {
-  padding: 5rem;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../../../public/img/galerie.jpg), no-repeat center center;
   background-size: auto, auto, auto;
   background-size: cover;
-  color: white;
-  height: calc(100vh - 120px);
-  width: 99vw;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+  padding: 120px 0;
 }
 
 .box {
@@ -59,10 +53,9 @@
 
 .modal img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 590px;
+  height: 590px;
   margin: auto;
-  margin-top: 5%;
 }
 
 .close-icon {
@@ -91,7 +84,7 @@
   background-color: white !important;
   border-radius: 4px !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
-  padding: 23px 5px 5px 5px !important;
+  padding: 5px !important;
   text-align: center !important;
 }
 
@@ -105,6 +98,7 @@
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
+  z-index: 23;
 }
 
 .modal-image {
@@ -118,9 +112,42 @@
   color: #ed7703 !important;
 }
 .slick-prev {
-  left: -70px !important;
+  position: absolute !important;
+  width: 70px !important;
+  height: 60px !important;
+  top: -65px !important;
+  z-index: 1 !important;
+  left: 46% !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  display: block !important;
 }
-
+.slick-next {
+  position: absolute !important;
+  width: 70px !important;
+  height: 60px !important;
+  top: -65px !important;
+  z-index: 1 !important;
+  right: 46% !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  display: block !important;
+}
+.slick-list {
+  position: relative !important;
+  overflow: hidden !important;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+}
 .slick-next:before {
   font-size: 59px !important;
   color: #ed7703 !important;
@@ -128,15 +155,16 @@
 
 .slick-dots {
   top: 107%;
+  display: none;
 }
-.slick-dots li button:before {
+/* .slick-dots li button:before {
   font-size: 15px !important;
   color: #ed7703 !important;
 }
 .slick-dots li.slick-active button:before {
   opacity: 0.75 !important;
   color: #ed7703 !important;
-}
+} */
 
 .carousels h2 {
   font-family: 'Archivo Black', Sans-serif;
@@ -145,4 +173,99 @@
   line-height: 1.1em;
   color: #ed7703;
   font-weight: 600;
+}
+.slick-slider {
+  display: block;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+.carousels-title {
+  margin-bottom: 120px;
+  padding-bottom: 20px;
+}
+.section-title::before {
+  position: absolute;
+  content: '';
+  width: 150px;
+  height: 2px;
+  bottom: 12px;
+  left: calc(50% - 75px);
+  background: #ed7703;
+}
+.section-title::after {
+  position: absolute;
+  content: '';
+  width: 120px;
+  height: 2px;
+  bottom: 8px;
+  left: calc(50% - 60px);
+  background: #ed7703;
+}
+.carousels-title-projet {
+  letter-spacing: 3px;
+  color: #ed7703;
+}
+.carousels-title-rea {
+  font-weight: 700;
+}
+.slick-dots {
+  display: none !important;
+}
+@media screen and (max-width: 1580px) {
+  .slick-dots {
+    display: none !important;
+  }
+  .slick-next {
+    right: 45% !important;
+  }
+  .slick-prev {
+    left: 45% !important;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .slick-next {
+    right: 44% !important;
+  }
+  .slick-prev {
+    left: 44% !important;
+  }
+  .modal {
+    width: 94% !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .slick-next {
+    right: 42% !important;
+  }
+  .slick-prev {
+    left: 42% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slick-next {
+    right: 40% !important;
+  }
+  .slick-prev {
+    left: 40% !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .slick-next {
+    right: 38% !important;
+  }
+  .slick-prev {
+    left: 38% !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slick-next {
+    right: 33% !important;
+  }
+  .slick-prev {
+    left: 33% !important;
+  }
+  .carousels {
+    height: calc(100vh - 17px);
+  }
 }

@@ -4,19 +4,19 @@ import Slider from '../components/Slider'
 import Informations from '../components/Informations'
 import PhotoGallery from '../components/gallery'
 import House from '../components/house'
-import Partners from '../components/Partner'
 import Footer from '../components/Footer'
 import Popup from '../components/Popup'
+import Sponsors from '../components/Sponsor'
 function Accueil() {
   return (
     <div>
       <Popup />
-      <Navbar />
+      <Navbar scroll={true} />
       <Slider />
       <Informations />
       <PhotoGallery />
       <House />
-      <Partners />
+      <Sponsors />
       <Footer />
     </div>
   )
