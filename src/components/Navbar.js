@@ -46,7 +46,7 @@ function Navbar({ scroll }) {
         />
         <nav className="navbar-ref" ref={navRef}>
           <Link to="/accueil">Accueil</Link>
-          <Link to="/maintenance">Votre projet en 5 étapes</Link>
+          <Link to="/projet">Votre projet en 4 étapes</Link>
           <Link to="/qui-somme-nous">Qui somme nous ?</Link>
           <Link to="/contact">Contact</Link>
 
@@ -87,9 +87,9 @@ function Navbar({ scroll }) {
         />
         <nav className="navbar-ref" ref={navRef}>
           <Link to="/accueil">Accueil</Link>
-          <Link to="/maintenance">Votre projet en 5 étapes</Link>
+          <Link to="/projet">Votre projet en 4 étapes</Link>
           <Link to="/qui-somme-nous">Qui somme nous ?</Link>
-          <Link to="/maintenance">Contact</Link>
+          <Link to="/contact">Contact</Link>
 
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />

@@ -6,6 +6,7 @@ import NoPage from './pages/NoPage'
 import Maintenance from './pages/Maintenance'
 import Contact from './pages/Contact'
 import About from './pages/About'
+import Project from './pages/Project'
 export default function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/qui-somme-nous" element={<About />} />
           <Route path="/mention-legal" element={<Mention />} />
           <Route path="/maintenance" element={<Maintenance />} />
+          <Route path="/projet" element={<Project />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </BrowserRouter>
