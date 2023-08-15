@@ -7,10 +7,14 @@ import { TbSolarPanel } from 'react-icons/tb'
 import { GiWindTurbine } from 'react-icons/gi'
 import { RiWaterFlashFill } from 'react-icons/ri'
 import { GiHeatHaze } from 'react-icons/gi'
+import { Link } from 'react-router-dom'
 const About = () => {
   return (
     <>
       <Navbar scroll={false} />
+      <div className="about-title">
+        <h1>Qui somme nous ?</h1>
+      </div>
       <div className="about-container">
         <div className="about-container-first">
           <div className="section">
@@ -63,7 +67,12 @@ const About = () => {
           </div>
         </div>
         <button className="about-container-middle-btn">
-          Demandez un devis
+          <Link
+            to="/contact"
+            style={{ textDecoration: 'none', color: 'white' }}
+          >
+            Demandez un devis
+          </Link>
         </button>
       </div>
 

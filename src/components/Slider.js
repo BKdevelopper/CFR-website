@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import './CSS/slider.css'
-
+import { Link } from 'react-router-dom'
 const Slider = () => {
   const [index, setIndex] = useState(0)
 
@@ -55,7 +55,15 @@ const Slider = () => {
               />
               <h3 className="TitleSlide">
                 {image.caption}
-                <button className="ButtonSlide">Devis gratuit</button>
+                <button className="ButtonSlide">
+                  {' '}
+                  <Link
+                    to="/contact"
+                    style={{ textDecoration: 'none', color: 'white' }}
+                  >
+                    Devis gratuit
+                  </Link>
+                </button>
               </h3>
 
               <Carousel.Caption
