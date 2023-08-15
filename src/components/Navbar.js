@@ -34,7 +34,9 @@ function Navbar({ scroll }) {
       className="header-nav"
       style={{
         backgroundColor: isScrolled ? '#ed7703' : 'transparent',
+        position: 'fixed',
       }}
+      id="header"
     >
       <div className="navbar">
         <img
@@ -43,19 +45,22 @@ function Navbar({ scroll }) {
           alt=""
         />
         <nav className="navbar-ref" ref={navRef}>
-          <Link to="/acceuil">Accueil</Link>
+          <Link to="/accueil">Accueil</Link>
           <Link to="/maintenance">Votre projet en 5 étapes</Link>
-          <Link to="/maintenance">Blog</Link>
-          <Link to="/maintenance">Contact</Link>
+          <Link to="/qui-somme-nous">Qui somme nous ?</Link>
+          <Link to="/contact">Contact</Link>
 
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />
           </button>
         </nav>
         <div className="navbar-contact">
-          <div className="navbar-contact-devis">
-            Obtenir un devis ou un bilan énergétique gratuit
-          </div>
+          <Link to="/contact" style={{ textDecoration: 'none' }}>
+            <div className="navbar-contact-devis">
+              Obtenir un devis ou un bilan énergétique gratuit
+            </div>
+          </Link>
+
           <a className="navbar-contact-phone" href="tel:0763626188">
             {' '}
             <BsTelephone /> 07 63 62 61 88
@@ -71,6 +76,7 @@ function Navbar({ scroll }) {
       className="header-nav"
       style={{
         backgroundColor: '#ed7703',
+        position: 'relative',
       }}
     >
       <div className="navbar">
@@ -80,9 +86,9 @@ function Navbar({ scroll }) {
           alt=""
         />
         <nav className="navbar-ref" ref={navRef}>
-          <Link to="/acceuil">Accueil</Link>
+          <Link to="/accueil">Accueil</Link>
           <Link to="/maintenance">Votre projet en 5 étapes</Link>
-          <Link to="/maintenance">Blog</Link>
+          <Link to="/qui-somme-nous">Qui somme nous ?</Link>
           <Link to="/maintenance">Contact</Link>
 
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
@@ -90,9 +96,11 @@ function Navbar({ scroll }) {
           </button>
         </nav>
         <div className="navbar-contact">
-          <div className="navbar-contact-devis">
-            Obtenir un devis ou un bilan énergétique gratuit
-          </div>
+          <Link to="/contact" style={{ textDecoration: 'none' }}>
+            <div className="navbar-contact-devis">
+              Obtenir un devis ou un bilan énergétique gratuit
+            </div>
+          </Link>
           <a className="navbar-contact-phone" href="tel:0763626188">
             {' '}
             <BsTelephone /> 07 63 62 61 88

@@ -6,7 +6,7 @@ const Mention = () => {
   return (
     <div>
       <Navbar scroll={false} />
-      <article className=" ">
+      <article className="article">
         <div className="article-container">
           <h2 className="mention-h2">Définitions</h2>
           <p className="mention-p">

@@ -26,7 +26,6 @@
   align-items: center;
   justify-content: center;
   z-index: 20;
-  position: fixed !important;
   width: 100%;
 }
 .header-fixed {
@@ -109,7 +108,7 @@
   color: #f08419;
   text-decoration: none;
 }
-@media screen and (max-width: 1540px) {
+@media screen and (max-width: 1700px) {
   .navbar {
     width: 90%;
   }
