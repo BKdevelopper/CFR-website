@@ -25,7 +25,7 @@ const About = () => {
           </div>
           <div className="section">
             <img
-              src="https://bkdevelopper.github.io/CFR-website/img/advantage.png"
+              src="https://bkdevelopper.github.io/CFR-website/img/avantage.png"
               alt="Header"
             />
             <div className="about-container-first-textcontainer">
