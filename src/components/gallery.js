@@ -5,7 +5,21 @@ import 'slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
 import { MdZoomIn, MdClose } from 'react-icons/md'
 import Modal from 'react-modal'
-
+import photo1 from '../img/photo1.png'
+import photo2 from '../img/photo2.JPG'
+import photo3 from '../img/photo3.JPG'
+import photo4 from '../img/photo4.png'
+import photo5 from '../img/photo5.png'
+import photo6 from '../img/photo6.png'
+import photo7 from '../img/photo7.png'
+import photo8 from '../img/photo8.JPG'
+import photo9 from '../img/photo9.JPG'
+import photo10 from '../img/photo10.png'
+import photo11 from '../img/photo11.png'
+import photo12 from '../img/photo12.JPG'
+import photo13 from '../img/photo13.JPG'
+import photo14 from '../img/photo14.JPG'
+import photo15 from '../img/photo15.JPG'
 Modal.setAppElement('#root') // Set the root element for react-modal
 
 const PhotoGallery = () => {
@@ -48,21 +62,21 @@ const PhotoGallery = () => {
   }
 
   const image = [
-    'https://bkdevelopper.github.io/CFR-website/img/photo1.png',
-    'https://bkdevelopper.github.io/CFR-website/img/photo2.JPG',
-    'https://bkdevelopper.github.io/CFR-website/img/photo3.JPG',
-    'https://bkdevelopper.github.io/CFR-website/img/photo4.png',
-    'https://bkdevelopper.github.io/CFR-website/img/photo5.png',
-    'https://bkdevelopper.github.io/CFR-website/img/photo6.png',
-    'https://bkdevelopper.github.io/CFR-website/img/photo7.png',
-    'https://bkdevelopper.github.io/CFR-website/img/photo8.JPG',
-    'https://bkdevelopper.github.io/CFR-website/img/photo9.JPG',
-    'https://bkdevelopper.github.io/CFR-website/img/photo10.png',
-    'https://bkdevelopper.github.io/CFR-website/img/photo11.png',
-    'https://bkdevelopper.github.io/CFR-website/img/photo12.JPG',
-    'https://bkdevelopper.github.io/CFR-website/img/photo13.JPG',
-    'https://bkdevelopper.github.io/CFR-website/img/photo14.JPG',
-    'https://bkdevelopper.github.io/CFR-website/img/photo15.JPG',
+    photo1,
+    photo2,
+    photo3,
+    photo4,
+    photo5,
+    photo6,
+    photo7,
+    photo8,
+    photo9,
+    photo10,
+    photo11,
+    photo12,
+    photo13,
+    photo14,
+    photo15,
   ]
 
   const openModal = (img) => {

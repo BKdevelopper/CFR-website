@@ -1,6 +1,7 @@
 .article {
   position: relative;
   top: 120px;
+  margin-bottom: 144px;
 }
 .article-container {
   max-width: 800px;

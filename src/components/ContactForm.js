@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './CSS/contactform.css'
-
+import ReCAPTCHA from 'react-google-recaptcha'
 const ContactForm = () => {
   const [name, setName] = useState('')
   const [surname, setSurname] = useState('')
@@ -12,6 +12,9 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     // Envoyer les données du formulaire vers un point d'API
+  }
+  function onChange(value) {
+    console.log('Captcha value:', value)
   }
 
   return (
@@ -95,6 +98,10 @@ const ContactForm = () => {
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
+        <ReCAPTCHA
+          sitekey="6LeeiKwnAAAAABnT9ZWv4I-WQgTuQANATYUqNNZB"
+          onChange={onChange}
+        />
         <button type="submit" className="submit-button">
           Envoyer
         </button>

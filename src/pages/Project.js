@@ -6,6 +6,10 @@ import Footer from '../components/Footer'
 import { FaHotel } from 'react-icons/fa'
 import { FaHandshake } from 'react-icons/fa'
 import { AiOutlineFileText } from 'react-icons/ai'
+import bilan from '../img/bilan.jpeg'
+import electrique from '../img/appareillage-electrique.png'
+import administratif from '../img/administrative.jpg'
+import solar from '../img/solar.png'
 const Project = () => {
   return (
     <>
@@ -16,10 +20,7 @@ const Project = () => {
       <div className="project-container">
         <div className="project-container-first">
           <div className="project-section">
-            <img
-              src="https://bkdevelopper.github.io/CFR-website/img/bilan.jpeg"
-              alt="Header"
-            />
+            <img src={bilan} alt="Header" />
             <div className="project-container-first-textcontainer">
               <h1>1. VOTRE BILAN </h1>
               <h2>Faites-en la demande dès à présent.</h2>
@@ -42,10 +43,7 @@ const Project = () => {
             </div>
           </div>
           <div className="project-section" style={{ marginTop: '1rem' }}>
-            <img
-              src="https://bkdevelopper.github.io/CFR-website/img/appareillage-electrique.png"
-              alt="Header"
-            />
+            <img src={electrique} alt="Header" />
             <div className="project-container-first-textcontainer">
               <h1>2. VISITE TECHNIQUE</h1>
               <h2>Inclus dans notre engagement</h2>
@@ -119,10 +117,7 @@ const Project = () => {
       <div className="project-container">
         <div className="project-container-first">
           <div className="project-section">
-            <img
-              src="https://bkdevelopper.github.io/CFR-website/img/administrative.jpg"
-              alt="Header"
-            />
+            <img src={administratif} alt="Header" />
             <div className="project-container-first-textcontainer">
               <h1>3. DÉMARCHES ADMINISTRATIVES </h1>
               <h2>100% PRISES EN CHARGE</h2>
@@ -145,11 +140,7 @@ const Project = () => {
             </div>
           </div>
           <div className="project-section">
-            <img
-              src="https://bkdevelopper.github.io/CFR-website/img/solar.png"
-              alt="Header"
-              style={{ marginTop: '-1.5rem' }}
-            />
+            <img src={solar} alt="Header" style={{ marginTop: '-1.5rem' }} />
             <div className="project-container-first-textcontainer">
               <h1>4. INSTALLATION DU GÉNÉRATEUR </h1>
               <h2>INSTALLATION EN 1 JOURNÉE</h2>

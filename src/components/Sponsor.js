@@ -1,5 +1,24 @@
 import React from 'react'
 import './CSS/sponsors.css'
+import logo1 from '../img/logo/1.png'
+import logo2 from '../img/logo/2.png'
+import logo3 from '../img/logo/3.png'
+import logo4 from '../img/logo/4.jpeg'
+import logo5 from '../img/logo/5.png'
+import logo6 from '../img/logo/6.png'
+import logo7 from '../img/logo/7.png'
+import logo8 from '../img/logo/8.jpg'
+import logo9 from '../img/logo/9.png'
+import logo10 from '../img/logo/10.png'
+import logo11 from '../img/logo/11.png'
+import qualif1 from '../img/logo/qualification/1.png'
+import qualif2 from '../img/logo/qualification/2.png'
+import qualif3 from '../img/logo/qualification/3.png'
+import qualif4 from '../img/logo/qualification/4.png'
+import qualif5 from '../img/logo/qualification/5.png'
+import qualif6 from '../img/logo/qualification/6.png'
+import qualif7 from '../img/logo/qualification/7.png'
+import qualif8 from '../img/logo/qualification/8.jpeg'
 
 const Sponsors = () => {
   return (
@@ -8,131 +27,71 @@ const Sponsors = () => {
       <div className="sslider">
         <div className="sslide-track">
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={logo1} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={logo2} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={logo3} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={logo4} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={logo5} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={logo6} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={logo7} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={logo8} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={logo9} alt="sponsor" className="sslide-img" />
+          </div>
+          <div className="sslide">
+            <img src={logo10} alt="sponsor" className="sslide-img" />
+          </div>
+          <div className="sslide">
+            <img src={logo11} alt="sponsor" className="sslide-img" />
           </div>
 
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={logo1} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={logo2} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={logo3} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={logo4} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={logo5} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={logo6} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={logo7} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={logo8} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={logo9} alt="sponsor" className="sslide-img" />
+          </div>
+          <div className="sslide">
+            <img src={logo10} alt="sponsor" className="sslide-img" />
+          </div>
+          <div className="sslide">
+            <img src={logo11} alt="sponsor" className="sslide-img" />
           </div>
         </div>
       </div>
@@ -140,131 +99,53 @@ const Sponsors = () => {
       <div className="sslider">
         <div className="sslide-track">
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={qualif1} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={qualif2} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={qualif3} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={qualif4} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={qualif5} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={qualif6} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={qualif7} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
-          </div>
-          <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={qualif8} alt="sponsor" className="sslide-img" />
           </div>
 
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={qualif1} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={qualif2} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={qualif3} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={qualif4} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={qualif5} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={qualif6} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={qualif7} alt="sponsor" className="sslide-img" />
           </div>
           <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
-          </div>
-          <div className="sslide">
-            <img
-              src="https://www.qualit-enr.org/wp-content/uploads/2020/08/logo-QualiPV-2023-RGE_sc-png.png"
-              alt="sponsor"
-              className="sslide-img"
-            />
+            <img src={qualif8} alt="sponsor" className="sslide-img" />
           </div>
         </div>
       </div>

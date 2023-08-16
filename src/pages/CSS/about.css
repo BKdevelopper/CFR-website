@@ -55,7 +55,7 @@
   text-align: center;
   margin: 40px 0;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../../../public/img/galerie.jpg), no-repeat center center;
+    url(../../img/galerie.jpg), no-repeat center center;
   background-size: auto, auto, auto;
   background-size: cover;
   padding: 120px 0;

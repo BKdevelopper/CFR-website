@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import './CSS/slider.css'
 import { Link } from 'react-router-dom'
+import galerie1 from '../img/galery1.jpg'
+import galerie2 from '../img/galery2.jpg'
+import galerie3 from '../img/galery3.jpg'
 const Slider = () => {
   const [index, setIndex] = useState(0)
 
@@ -11,18 +14,18 @@ const Slider = () => {
 
   const images = [
     {
-      src: 'https://bkdevelopper.github.io/CFR-website/img/galery1.jpg',
+      src: galerie1,
       alt: 'Image 1',
       caption:
         "Économisez de l'argent tout en réduisant votre empreinte carbone",
     },
     {
-      src: 'https://bkdevelopper.github.io/CFR-website/img/galery2.jpg',
+      src: galerie2,
       alt: 'Image 2',
       caption: 'Transformez votre maison en un habitat éco-énergétique',
     },
     {
-      src: 'https://bkdevelopper.github.io/CFR-website/img/galery3.jpg',
+      src: galerie3,
       alt: 'Image 3',
       caption: "Améliorez votre confort tout en préservant l'environnement",
     },

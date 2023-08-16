@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { BsTelephone } from 'react-icons/bs'
 import './CSS/navbar.css'
 import { Link } from 'react-router-dom'
-
+import logo from '../img/logo white.png'
 function Navbar({ scroll }) {
   const navRef = useRef()
   const [isScrolled, setIsScrolled] = useState(false)
@@ -39,11 +39,7 @@ function Navbar({ scroll }) {
       id="header"
     >
       <div className="navbar">
-        <img
-          src="https://bkdevelopper.github.io/CFR-website/img/logo white.png"
-          className="logo"
-          alt=""
-        />
+        <img src={logo} className="logo" alt="" />
         <nav className="navbar-ref" ref={navRef}>
           <Link to="/accueil">Accueil</Link>
           <Link to="/projet">Votre projet en 4 étapes</Link>
@@ -80,11 +76,7 @@ function Navbar({ scroll }) {
       }}
     >
       <div className="navbar">
-        <img
-          src="https://bkdevelopper.github.io/CFR-website/img/logo white.png"
-          className="logo"
-          alt=""
-        />
+        <img src={logo} className="logo" alt="" />
         <nav className="navbar-ref" ref={navRef}>
           <Link to="/accueil">Accueil</Link>
           <Link to="/projet">Votre projet en 4 étapes</Link>

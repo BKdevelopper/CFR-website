@@ -63,11 +63,11 @@ const Mention = () => {
             réalisation et de son suivi:
           </p>
           <p className="mention-p">
-            <strong>Propriétaire</strong> : SAS B&amp;CO CFR Capital social de 1
-            000€ Numéro de TVA: FR73894807528 – 7, Boulevard Aristide briand
-            14000 Caen
+            <strong>Propriétaire</strong> : SAS CONSEILLER FRANCE RENOVATION -
+            CFR Capital social de 1 000€ Numéro de TVA: FR73894807528 – 7,
+            Boulevard Aristide briand 14000 Caen
             <br />
-            <strong>Responsable publication</strong> : MCFR –
+            <strong>Responsable publication</strong> : CFR –
             moncfr.contact@gmail.com
             <br />
             Le responsable publication est une personne physique ou une personne
@@ -75,8 +75,8 @@ const Mention = () => {
             <br />
             <strong>Webmaster</strong> : DEV CFR – moncfr.contact@gmail.com
             <br />
-            <strong>Hébergeur</strong> : 1and1 – 7 Place de la Gare 57200
-            Sarreguemines 0970 808 911
+            <strong>Hébergeur</strong> : OVH – 72 rue Kellermann - 59100 Roubaix
+            - France.
             <br />
             <strong>Délégué à la protection des données</strong> :
             moncfr.contact – moncfr.contact@gmail.com
@@ -302,7 +302,7 @@ const Mention = () => {
             Pour les Données Personnelles collectées dans le cadre de la
             création du compte personnel de l’Utilisateur et de sa navigation
             sur le Site, le responsable du traitement des Données Personnelles
-            est : B&amp;CO MonCoachÉnergie.{' '}
+            est : CONSEILLER FRANCE RENOVATION - CFR.{' '}
             <a className="mention-a" href="https://moncfr.fr/">
               https://moncfr.fr/
             </a>
@@ -455,10 +455,10 @@ const Mention = () => {
             par écrit à l’adresse suivante :
           </p>
           <p className="mention-p">
-            B&amp;CO MonCoachÉnergie – DPO, dev.moncoachenergie
+            CONSEILLER FRANCE RENOVATION - CFR – DPO, dev.cfr
             <br />
-            45 rue de Metz 57130 Jouy aux arches.Dans ce cas, l’Utilisateur doit
-            indiquer les Données Personnelles qu’il souhaiterait que{' '}
+            7, Boulevard Aristide briand, 14000 Caen.Dans ce cas, l’Utilisateur
+            doit indiquer les Données Personnelles qu’il souhaiterait que{' '}
             <a className="mention-a" href="https://moncfr.fr/">
               https://moncfr.fr/
             </a>{' '}

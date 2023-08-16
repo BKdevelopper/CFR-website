@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import './CSS/contact.css'
 import ContactForm from '../components/ContactForm'
+import galery1 from '../img/galery1.jpg'
 const Contact = () => {
   const handleClick = () => {
     window.scrollTo({
@@ -16,7 +17,7 @@ const Contact = () => {
       <div
         className="wallpaper"
         style={{
-          backgroundImage: `url("https://bkdevelopper.github.io/CFR-website/img/galery1.jpg")`,
+          backgroundImage: `url("${galery1}")`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',

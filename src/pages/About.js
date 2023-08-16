@@ -8,6 +8,10 @@ import { GiWindTurbine } from 'react-icons/gi'
 import { RiWaterFlashFill } from 'react-icons/ri'
 import { GiHeatHaze } from 'react-icons/gi'
 import { Link } from 'react-router-dom'
+import presentation from '../img/présentation.jpg'
+import avantage from '../img/avantage.png'
+import service from '../img/service.jpg'
+import equipe from '../img/equipe.jpg'
 const About = () => {
   return (
     <>
@@ -18,20 +22,14 @@ const About = () => {
       <div className="about-container">
         <div className="about-container-first">
           <div className="section">
-            <img
-              src="https://bkdevelopper.github.io/CFR-website/img/présentation.jpg"
-              alt="Header"
-            />
+            <img src={presentation} alt="Header" />
             <div className="about-container-first-textcontainer">
               <h2>1. Présentation CFR</h2>
               <p>{sections.header}</p>
             </div>
           </div>
           <div className="section">
-            <img
-              src="https://bkdevelopper.github.io/CFR-website/img/avantage.png"
-              alt="Header"
-            />
+            <img src={avantage} alt="Header" />
             <div className="about-container-first-textcontainer">
               <h2>2. Les avantages</h2>
               <p>{sections.advantages}</p>
@@ -79,20 +77,14 @@ const About = () => {
       <div className="about-container">
         <div className="about-container-first">
           <div className="section">
-            <img
-              src="https://bkdevelopper.github.io/CFR-website/img/service.jpg"
-              alt="Header"
-            />
+            <img src={service} alt="Header" />
             <div className="about-container-first-textcontainer">
               <h2>3. Nos services</h2>
               <p>{sections.services}</p>
             </div>
           </div>
           <div className="section">
-            <img
-              src="https://bkdevelopper.github.io/CFR-website/img/equipe.jpg"
-              alt="Header"
-            />
+            <img src={equipe} alt="Header" />
             <div className="about-container-first-textcontainer">
               <h2>4. Notre équipe</h2>
               <p>{sections.conclusion}</p>

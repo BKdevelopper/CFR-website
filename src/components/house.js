@@ -1,5 +1,6 @@
 import React from 'react'
 import './CSS/house.css'
+import maison from '../img/maison.png'
 const House = () => {
   return (
     <div className="container-house">
@@ -28,11 +29,7 @@ const House = () => {
         </h3>
       </div>
       <div className="container-house-img">
-        <img
-          src="https://bkdevelopper.github.io/CFR-website/img/maison.png"
-          className="maison"
-          alt=""
-        />
+        <img src={maison} className="maison" alt="" />
       </div>
     </div>
   )

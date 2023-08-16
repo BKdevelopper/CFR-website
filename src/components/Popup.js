@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { FiX } from 'react-icons/fi'
 import './CSS/popup.css'
-
+import pub from '../img/pub.png'
+import { Link } from 'react-router-dom'
 const Popup = () => {
   const [showPopup, setShowPopup] = useState(false)
 
@@ -24,12 +25,15 @@ const Popup = () => {
           <FiX />
         </button>
         {/* Contenu de votre popup publicitaire */}
-        <img
-          src="https://bkdevelopper.github.io/CFR-website/img/pub.png"
-          alt="Popup Publicitaire"
-          className="popup-image"
-        />
-        <button className="interested-button">Ça m'intéresse</button>
+        <img src={pub} alt="Popup Publicitaire" className="popup-image" />
+        <button className="interested-button">
+          <Link
+            to="/contact"
+            style={{ textDecoration: 'none', color: 'white' }}
+          >
+            Ça m'intéresse
+          </Link>
+        </button>
       </div>
     </div>
   ) : null
