@@ -1,20 +1,65 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import './CSS/contactform.css'
 import ReCAPTCHA from 'react-google-recaptcha'
-const ContactForm = () => {
-  const [name, setName] = useState('')
-  const [surname, setSurname] = useState('')
-  const [city, setCity] = useState('')
-  const [email, setEmail] = useState('')
-  const [subject, setSubject] = useState('')
-  const [message, setMessage] = useState('')
+import axios from 'axios'
 
-  const handleSubmit = (e) => {
+const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    city: '',
+    first_name: '',
+    last_name: '',
+    email: '',
+    message: '',
+    subject: '',
+  })
+  const [captchaValid, setCaptchaValid] = useState(false)
+  const emailRef = useRef(null)
+  const [formErrors, setFormErrors] = useState({
+    email: '',
+  })
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }))
+  }
+  function isValidEmail(email) {
+    // Vérification basique avec une expression régulière pour la structure de l'e-mail
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/
+    return emailRegex.test(email)
+  }
+
+  const validateFormData = () => {
+    const errors = {
+      email: isValidEmail(formData.email) ? '' : 'Email is not valid',
+    }
+    setFormErrors(errors)
+    return Object.values(errors).every((error) => error === '') && captchaValid
+  }
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Envoyer les données du formulaire vers un point d'API
+    if (!validateFormData()) {
+      console.log('Form data is not valid')
+      return
+    }
+    try {
+      const response = await axios.post('https://moncfr.fr/api/mail', formData)
+
+      if (response.data && response.data.success) {
+        console.log('Email sent successfully')
+        // If you want to utilize the ref for some post-submit logic, you can:
+        emailRef.current.value = ''
+      } else {
+        console.error('Error sending email', response.data)
+      }
+    } catch (error) {
+      console.error('An error occurred:', error)
+    }
   }
   function onChange(value) {
     console.log('Captcha value:', value)
+    setCaptchaValid(true)
   }
 
   return (
@@ -30,10 +75,12 @@ const ContactForm = () => {
             </label>
             <input
               type="text"
+              name="first_name"
               id="name"
               className="form-input"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={formData.first_name}
+              placeholder="Prénom"
+              onChange={handleChange}
             />
           </div>
           <div className="form-group-name-nom">
@@ -43,9 +90,11 @@ const ContactForm = () => {
             <input
               type="text"
               id="surname"
+              name="last_name"
               className="form-input"
-              value={surname}
-              onChange={(e) => setSurname(e.target.value)}
+              value={formData.last_name}
+              onChange={handleChange}
+              placeholder="Nom"
             />
           </div>
         </div>
@@ -57,9 +106,11 @@ const ContactForm = () => {
             <input
               type="text"
               id="city"
+              name="city"
               className="form-input"
-              value={city}
-              onChange={(e) => setCity(e.target.value)}
+              value={formData.city}
+              onChange={handleChange}
+              placeholder="Ville"
             />
           </div>
           <div className="form-group-info-email">
@@ -70,9 +121,15 @@ const ContactForm = () => {
               type="email"
               id="email"
               className="form-input"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              name="email"
+              value={formData.email}
+              placeholder="Email"
+              onChange={handleChange}
+              ref={emailRef}
             />
+            {formErrors.email && (
+              <p className="error-message">{formErrors.email}</p>
+            )}
           </div>
         </div>
         <div className="form-group-subject">
@@ -82,9 +139,11 @@ const ContactForm = () => {
           <input
             type="text"
             id="subject"
+            name="subject"
             className="form-input"
-            value={subject}
-            onChange={(e) => setSubject(e.target.value)}
+            value={formData.subject}
+            onChange={handleChange}
+            placeholder="Sujet"
           />
         </div>
         <div className="form-group-message">
@@ -93,9 +152,11 @@ const ContactForm = () => {
           </label>
           <textarea
             id="message"
+            name="message"
             className="form-textarea"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="Message"
           ></textarea>
         </div>
         <ReCAPTCHA

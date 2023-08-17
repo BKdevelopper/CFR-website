@@ -8,7 +8,7 @@ const sections = {
     `,
 
   services: `
-  Notre entreprise est fière de contribuer activement à cette transition. Pendant cette période, nous avons développé une expertise solide dans la conception, l'installation, la maintenance et l'optimisation de systèmes d'énergies renouvelables pour les particuliers, les entreprises et les collectivités. Nos services incluent:
+  Notre entreprise est fière de contribuer activement à cette transition. Pendant cette période, nous avons développé une expertise solide dans la conception, l'installation, la maintenance et l'optimisation de systèmes d'énergies renouvelables pour les particuliers, les entreprises et les collectivités.
     `,
   solaire: `Nous installons des panneaux solaires sur les toits et les terrains pour convertir la lumière du soleil en électricité propre. Cela permet de réduire considérablement la dépendance aux sources d'électricité traditionnelles.`,
   eolien: `Nous concevons et installons des éoliennes pour exploiter la force du vent et produire de l'électricité verte. Ces éoliennes peuvent être utilisées individuellement ou en parcs éoliens.`,

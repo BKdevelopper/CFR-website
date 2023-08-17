@@ -7,6 +7,11 @@ import Maintenance from './pages/Maintenance'
 import Contact from './pages/Contact'
 import About from './pages/About'
 import Project from './pages/Project'
+import Solar from './pages/Solar'
+import Climatisation from './pages/Climatisation'
+import Thermodynamique from './pages/Thermodynamique'
+import Pompe from './pages/Pompe'
+import Isolation from './pages/Isolation'
 export default function App() {
   return (
     <div className="App">
@@ -20,6 +25,11 @@ export default function App() {
           <Route path="/mention-legal" element={<Mention />} />
           <Route path="/maintenance" element={<Maintenance />} />
           <Route path="/projet" element={<Project />} />
+          <Route path="/solaire" element={<Solar />} />
+          <Route path="/climatisation" element={<Climatisation />} />
+          <Route path="/thermodynamique" element={<Thermodynamique />} />
+          <Route path="/pompe-a-chaleur" element={<Pompe />} />
+          <Route path="/isolation" element={<Isolation />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </BrowserRouter>
