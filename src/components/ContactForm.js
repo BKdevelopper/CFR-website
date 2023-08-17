@@ -29,13 +29,18 @@ const ContactForm = () => {
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/
     return emailRegex.test(email)
   }
-
+  function onChange(value) {
+    console.log('Captcha value:', value)
+    setCaptchaValid(true)
+  }
   const validateFormData = () => {
     const errors = {
       email: isValidEmail(formData.email) ? '' : 'Email is not valid',
     }
     setFormErrors(errors)
-    return Object.values(errors).every((error) => error === '') && captchaValid
+    const isFormDataValid = Object.values(errors).every((error) => error === '')
+    setCaptchaValid(isFormDataValid && captchaValid) // Update captchaValid here
+    return isFormDataValid && captchaValid
   }
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -56,10 +61,6 @@ const ContactForm = () => {
     } catch (error) {
       console.error('An error occurred:', error)
     }
-  }
-  function onChange(value) {
-    console.log('Captcha value:', value)
-    setCaptchaValid(true)
   }
 
   return (
