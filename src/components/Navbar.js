@@ -39,7 +39,9 @@ function Navbar({ scroll }) {
       id="header"
     >
       <div className="navbar">
-        <img src={logo} className="logo" alt="" />
+        <Link to="/accueil">
+          <img src={logo} className="logo" alt="logo" />
+        </Link>
         <nav className="navbar-ref" ref={navRef}>
           <Link to="/accueil">Accueil</Link>
           <Link to="/projet">Votre projet en 4 étapes</Link>
@@ -76,7 +78,9 @@ function Navbar({ scroll }) {
       }}
     >
       <div className="navbar">
-        <img src={logo} className="logo" alt="" />
+        <Link to="/accueil">
+          <img src={logo} className="logo" alt="logo" />
+        </Link>
         <nav className="navbar-ref" ref={navRef}>
           <Link to="/accueil">Accueil</Link>
           <Link to="/projet">Votre projet en 4 étapes</Link>
