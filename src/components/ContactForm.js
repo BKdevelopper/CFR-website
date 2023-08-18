@@ -11,6 +11,7 @@ const ContactForm = () => {
     email: '',
     message: '',
     subject: '',
+    token: '',
   })
   const [captchaValid, setCaptchaValid] = useState(false)
   const emailRef = useRef(null)
@@ -32,6 +33,7 @@ const ContactForm = () => {
   function onChange(value) {
     console.log('Captcha value:', value)
     setCaptchaValid(true)
+    setFormData.token = value
   }
   const validateFormData = () => {
     const errors = {
@@ -62,6 +64,7 @@ const ContactForm = () => {
           email: '',
           message: '',
           subject: '',
+          token: '',
         })
         // Reset CAPTCHA validation status
         setCaptchaValid(false)
