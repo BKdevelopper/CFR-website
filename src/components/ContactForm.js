@@ -54,7 +54,17 @@ const ContactForm = () => {
       if (response.data && response.data.success) {
         console.log('Email sent successfully')
         // If you want to utilize the ref for some post-submit logic, you can:
-        emailRef.current.value = ''
+        // Clear form fields after successful submission
+        setFormData({
+          city: '',
+          first_name: '',
+          last_name: '',
+          email: '',
+          message: '',
+          subject: '',
+        })
+        // Reset CAPTCHA validation status
+        setCaptchaValid(false)
       } else {
         console.error('Error sending email', response.data)
       }
