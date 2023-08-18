@@ -92,7 +92,7 @@
   flex-direction: column;
 }
 .dropdown-container {
-  width: 100%;
+  width: 80%;
   height: auto;
   margin: 25px auto 0;
 }
@@ -114,8 +114,10 @@
 @media only screen and (width: 912px) {
   .dropdown-container {
     margin: 250px auto;
+    width: 100%;
   }
 }
+
 .dropdown-container-item {
   background-color: #ed7703;
   border-radius: 7px;

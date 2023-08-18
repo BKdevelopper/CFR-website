@@ -6,6 +6,7 @@ import climatisation from '../img/icon/climatisation.png'
 import pompe from '../img/icon/pompe.png'
 import thermodynamique from '../img/icon/thermodynamique.png'
 import chiffre from '../img/icon/chiffre.png'
+import { Link } from 'react-router-dom'
 const Informations = () => {
   return (
     <div className="container-information">
@@ -33,37 +34,47 @@ const Informations = () => {
       <div className="container-information-zone">
         <div className="container-information-zone-left">
           <div className="container-information-zone-left-top">
-            <img src={photovoltaique} alt=" " className="information-img" />
-            <h1 className="information-h1">PHOTOVOLTAÏQUE</h1>
-            <h2 className="information-h2">
-              L’énergie produite grâce au soleil
-            </h2>
+            <Link to="/solaire">
+              <img src={photovoltaique} alt=" " className="information-img" />
+              <h1 className="information-h1">PHOTOVOLTAÏQUE</h1>
+              <h2 className="information-h2">
+                L’énergie produite grâce au soleil
+              </h2>
+            </Link>
           </div>
           <div className="container-information-zone-left-bottom">
-            <img src={isolation} alt=" " className="information-img" />
-            <h1 className="information-h1">ISOLATION</h1>
-            <h2 className="information-h2">L’énergie économisée</h2>
+            <Link to="/isolation">
+              <img src={isolation} alt=" " className="information-img" />
+              <h1 className="information-h1">ISOLATION</h1>
+              <h2 className="information-h2">L’énergie économisée</h2>
+            </Link>
           </div>
         </div>
         <div className="container-information-zone-middle">
           <div className="container-information-zone-middle-top">
-            <img src={climatisation} alt=" " className="information-img" />
-            <h1 className="information-h1">CLIMATISATION</h1>
-            <h2 className="information-h2">Le confort été hiver</h2>
+            <Link to="/climatisation">
+              <img src={climatisation} alt=" " className="information-img" />
+              <h1 className="information-h1">CLIMATISATION</h1>
+              <h2 className="information-h2">Le confort été hiver</h2>
+            </Link>
           </div>
           <div className="container-information-zone-middle-bottom">
-            <img src={pompe} alt=" " className="information-img" />
-            <h1 className="information-h1">POMPE À CHALEUR</h1>
-            <h2 className="information-h2">
-              L’énergie produite par l’air et l’eau
-            </h2>
+            <Link to="/pompe-a-chaleur">
+              <img src={pompe} alt=" " className="information-img" />
+              <h1 className="information-h1">POMPE À CHALEUR</h1>
+              <h2 className="information-h2">
+                L’énergie produite par l’air et l’eau
+              </h2>
+            </Link>
           </div>
         </div>
         <div className="container-information-zone-right">
           <div className="container-information-zone-right-top">
-            <img src={thermodynamique} alt=" " className="information-img" />
-            <h1 className="information-h1">BALLON THERMODYNAMIQUE</h1>
-            <h2 className="information-h2">Eau Chaude Sanitaire maîtrisée</h2>
+            <Link to="/thermodynamique">
+              <img src={thermodynamique} alt=" " className="information-img" />
+              <h1 className="information-h1">BALLON THERMODYNAMIQUE</h1>
+              <h2 className="information-h2">Eau Chaude Sanitaire maîtrisée</h2>
+            </Link>
           </div>
           <div className="container-information-zone-right-bottom">
             <img src={chiffre} alt=" " className="information-img" />

@@ -78,6 +78,7 @@
   .project-container-first {
     flex-direction: column;
     align-items: center;
+    padding: 0px;
   }
 
   .project-section {

@@ -71,3 +71,10 @@ svg:not(:root) {
     height: auto;
   }
 }
+.container-information-zone-left-top a,
+.container-information-zone-left-bottom a,
+.container-information-zone-right-top a,
+.container-information-zone-middle-top a,
+.container-information-zone-middle-bottom a {
+  text-decoration: none;
+}

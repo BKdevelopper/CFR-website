@@ -1,12 +1,5 @@
 import React from 'react'
-import {
-  FiMail,
-  FiPhone,
-  FiMapPin,
-  FiFacebook,
-  FiInstagram,
-  FiLinkedin,
-} from 'react-icons/fi'
+import { FiMail, FiPhone, FiMapPin, FiFacebook } from 'react-icons/fi'
 import './CSS/footer.css'
 import { Link } from 'react-router-dom'
 const Footer = () => {
@@ -17,19 +10,19 @@ const Footer = () => {
           <h3>Information</h3>
           <ul>
             <li>
-              <a href="#Photovoltaïque">Photovoltaïque</a>
+              <Link to="/solaire">Photovoltaïque</Link>
             </li>
             <li>
-              <a href="#Isolation">Isolation</a>
+              <Link to="/isolation">Isolation</Link>
             </li>
             <li>
-              <a href="#Climatisation">Climatisation</a>
+              <Link to="/climatisation">Climatisation</Link>
             </li>
             <li>
-              <a href="#Ballon thermodynamique">Ballon thermodynamique</a>
+              <Link to="/thermodynamique">Ballon thermodynamique</Link>
             </li>
             <li>
-              <a href="#Pompe à chaleur">Pompe à chaleur</a>
+              <Link to="/pompe-a-chaleur">Pompe à chaleur</Link>
             </li>
           </ul>
         </div>
@@ -39,7 +32,7 @@ const Footer = () => {
           <ul>
             <li>
               <FiMail />
-              <a href="mailto:contact@cfr.fr">contact@cfr.fr</a>
+              <a href="mailto:contact@cfr.fr">contact@moncfr.fr</a>
             </li>
             <li>
               <FiPhone />
@@ -61,14 +54,14 @@ const Footer = () => {
           <ul>
             <li>
               <a
-                href="https://www.facebook.com/cfr.energy"
+                href="https://www.facebook.com/profile.php?id=61550349755738"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FiFacebook />
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="https://www.instagram.com/cfr.energy"
                 target="_blank"
@@ -85,7 +78,7 @@ const Footer = () => {
               >
                 <FiLinkedin />
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

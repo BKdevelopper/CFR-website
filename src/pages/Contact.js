@@ -4,7 +4,10 @@ import Footer from '../components/Footer'
 import './CSS/contact.css'
 import ContactForm from '../components/ContactForm'
 import galery1 from '../img/galery1.jpg'
+import CookieConsent from '../components/CookieConsent'
+import { useCookies } from 'react-cookie'
 const Contact = () => {
+  const [cookies] = useCookies(['cookieConsent'])
   const handleClick = () => {
     window.scrollTo({
       top: document.querySelector('#contactform').offsetTop,
@@ -69,6 +72,7 @@ const Contact = () => {
         </div>
       </div>
       <ContactForm />
+      {!cookies.cookieConsent && <CookieConsent />}
       <Footer />
     </>
   )
