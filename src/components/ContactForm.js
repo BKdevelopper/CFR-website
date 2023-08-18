@@ -33,7 +33,10 @@ const ContactForm = () => {
   function onChange(value) {
     console.log('Captcha value:', value)
     setCaptchaValid(true)
-    setFormData.token = value
+    setFormData((prevState) => ({
+      ...prevState,
+      token: value,
+    }))
   }
   const validateFormData = () => {
     const errors = {
