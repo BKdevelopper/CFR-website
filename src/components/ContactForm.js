@@ -53,29 +53,41 @@ const ContactForm = () => {
       console.log('Form data is not valid')
       return
     }
-    try {
-      const response = await axios.post('https://moncfr.fr/api/mail', formData)
 
-      if (response.data && response.data.success) {
-        console.log('Email sent successfully')
-        // If you want to utilize the ref for some post-submit logic, you can:
-        // Clear form fields after successful submission
-        setFormData({
-          city: '',
-          first_name: '',
-          last_name: '',
-          email: '',
-          message: '',
-          subject: '',
-          token: '',
-        })
-        // Reset CAPTCHA validation status
-        setCaptchaValid(false)
-      } else {
-        console.error('Error sending email', response.data)
-      }
-    } catch (error) {
-      console.error('An error occurred:', error)
+    const response = await axios
+      .post('https://moncfr.fr/api/mail', formData)
+      .then((response) => {
+        console.log(response.data)
+      })
+      .catch((error) => {
+        // Vérifie si l'erreur provient d'une réponse du serveur
+        if (error.response) {
+          console.log('Code erreur:', error.response.status)
+        } else if (error.request) {
+          // La requête a été faite mais aucune réponse n'a été reçue
+          console.log('Aucune réponse:', error.request)
+        } else {
+          // Quelque chose s'est mal passé lors de la mise en place de la requête
+          console.log('Erreur:', error.message)
+        }
+      })
+    if (response.data && response.data.success) {
+      console.log('Email sent successfully')
+      // If you want to utilize the ref for some post-submit logic, you can:
+      // Clear form fields after successful submission
+      setFormData({
+        city: '',
+        first_name: '',
+        last_name: '',
+        email: '',
+        message: '',
+        subject: '',
+        token: '',
+      })
+      // Reset CAPTCHA validation status
+      setCaptchaValid(false)
+    } else {
+      console.error('Error sending email', response.data)
     }
   }
 
