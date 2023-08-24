@@ -71,7 +71,7 @@ const Project = () => {
 
       <div className="project-container-middle">
         <div className="project-container-middle-title">
-          <h2>Quels sont les démarches à faire ?</h2>
+          <h2>Quels sont les démarches à effectuer ?</h2>
         </div>
         <div className="project-container-middle-text">
           <div className="project-container-middle-text-1">
@@ -95,7 +95,7 @@ const Project = () => {
           </div>
           <div className="project-container-middle-text-3">
             <AiOutlineFileText />
-            <h2>Attestation conseul électrique</h2>
+            <h2>Attestation consuel électrique</h2>
             <p>
               Cette phase survient une fois l'installation achevée. Nous nous
               chargeons d'obtenir en votre nom l'attestation de conformité

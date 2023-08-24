@@ -17,7 +17,7 @@ const About = () => {
     <>
       <Navbar scroll={false} />
       <div className="about-title">
-        <h1>Qui somme nous ?</h1>
+        <h1>Les énergies renouvelables</h1>
       </div>
       <div className="about-container">
         <div className="about-container-first">
