@@ -36,17 +36,27 @@ const SolarPanel = () => {
   }
   return (
     <>
-      <Navbar scroll={false} />
-      <div className="energy-container">
+      <Navbar scroll={false} aria-label="Menu de navigation" />
+      <div className="energy-container" aria-label="Contenu principal">
         <div className="energy-container-1">
           <div className="energy-container-1-titre">
             <h1>
               Photovoltaïque l’énergie solaire pour produire son électricité
             </h1>
-            <img src={photovol} alt="Energie Solaire" className="energy-img" />
+            <img
+              src={photovol}
+              alt="Energie Solaire"
+              className="energy-img"
+              aria-hidden="true"
+            />
           </div>
           <div className="energy-container-1-explication">
-            <img src={homesolar} alt="Energie Solaire" className="energy-img" />
+            <img
+              src={homesolar}
+              alt="Energie Solaire"
+              className="energy-img"
+              aria-hidden="true"
+            />
             <div className="energy-container-1-explication-text">
               <p>
                 L'énergie solaire présente des caractéristiques
@@ -62,7 +72,10 @@ const SolarPanel = () => {
                 photovoltaïque.
               </p>
               <Link to="/contact">
-                <button className="energy-container-1-explication-text-button">
+                <button
+                  className="energy-container-1-explication-text-button"
+                  aria-label="Contactez-nous"
+                >
                   Contactez-nous
                 </button>
               </Link>
@@ -75,6 +88,7 @@ const SolarPanel = () => {
               src={photovoltaique}
               alt=" "
               className="energy-container-2-img"
+              aria-hidden="true"
             />
 
             <h1>Photovoltaïque</h1>
@@ -96,6 +110,7 @@ const SolarPanel = () => {
                     <div
                       className="dropdown-container-item-title"
                       onClick={() => toggle(i)}
+                      aria-label={`Afficher ${item.title}`}
                     >
                       <h2>{item.title}</h2>
                       <img
@@ -106,11 +121,13 @@ const SolarPanel = () => {
                           transform: selected === i ? 'rotate(-180deg)' : null,
                           transition: '0.2s',
                         }}
+                        aria-hidden="true"
                       />
                     </div>
                     <div
                       className={selected === i ? 'boxx show' : 'boxx'}
                       key={i.content}
+                      aria-label={item.title}
                     >
                       {item.content}
                     </div>
@@ -126,7 +143,7 @@ const SolarPanel = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer aria-label="Pied de page" />
     </>
   )
 }

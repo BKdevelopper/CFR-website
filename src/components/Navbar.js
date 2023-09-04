@@ -40,16 +40,20 @@ function Navbar({ scroll }) {
     >
       <div className="navbar">
         <Link to="/accueil">
-          <img src={logo} className="logo" alt="logo" />
+          <img
+            src={logo}
+            className="logo"
+            alt="Logo CFR - Solutions Énergétiques"
+          />
         </Link>
         <nav className="navbar-ref" ref={navRef}>
           <Link to="/accueil">Accueil</Link>
           <Link to="/projet">Votre projet en 4 étapes</Link>
-          <Link to="/qui-somme-nous">Qui somme nous ?</Link>
+          <Link to="/qui-somme-nous">Qui sommes-nous ?</Link>
           <Link to="/contact">Contact</Link>
 
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-            <FaTimes />
+            <FaTimes aria-label="Fermer le menu de navigation" />
           </button>
         </nav>
         <div className="navbar-contact">
@@ -61,11 +65,15 @@ function Navbar({ scroll }) {
 
           <a className="navbar-contact-phone" href="tel:0763626188">
             {' '}
-            <BsTelephone /> 07 63 62 61 88
+            <BsTelephone aria-label="Numéro de téléphone" /> 07 63 62 61 88
           </a>
         </div>
       </div>
-      <button className="nav-btn" onClick={showNavbar}>
+      <button
+        className="nav-btn"
+        aria-label="Ouvrir le menu de navigation"
+        onClick={showNavbar}
+      >
         <FaBars />
       </button>
     </header>
@@ -79,16 +87,20 @@ function Navbar({ scroll }) {
     >
       <div className="navbar">
         <Link to="/accueil">
-          <img src={logo} className="logo" alt="logo" />
+          <img
+            src={logo}
+            className="logo"
+            alt="Logo CFR - Solutions Énergétiques"
+          />
         </Link>
         <nav className="navbar-ref" ref={navRef}>
           <Link to="/accueil">Accueil</Link>
           <Link to="/projet">Votre projet en 4 étapes</Link>
-          <Link to="/qui-somme-nous">Qui somme nous ?</Link>
+          <Link to="/qui-somme-nous">Qui sommes-nous ?</Link>
           <Link to="/contact">Contact</Link>
 
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-            <FaTimes />
+            <FaTimes aria-label="Fermer le menu de navigation" />
           </button>
         </nav>
         <div className="navbar-contact">
@@ -99,11 +111,15 @@ function Navbar({ scroll }) {
           </Link>
           <a className="navbar-contact-phone" href="tel:0763626188">
             {' '}
-            <BsTelephone /> 07 63 62 61 88
+            <BsTelephone aria-label="Numéro de téléphone" /> 07 63 62 61 88
           </a>
         </div>
       </div>
-      <button className="nav-btn" onClick={showNavbar}>
+      <button
+        className="nav-btn"
+        aria-label="Ouvrir le menu de navigation"
+        onClick={showNavbar}
+      >
         <FaBars />
       </button>
     </header>

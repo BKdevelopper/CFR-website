@@ -16,7 +16,7 @@ const Contact = () => {
   }
   return (
     <>
-      <Navbar scroll={true} />
+      <Navbar scroll={true} aria-label="Menu de navigation" />
       <div
         className="wallpaper"
         style={{
@@ -46,6 +46,7 @@ const Contact = () => {
             fontWeight: 'bold',
             fontFamily: 'Arial',
           }}
+          aria-label="Informations de contact"
         >
           <p>Vous souhaitez obtenir un devis</p>
           <p>ou</p>
@@ -66,14 +67,15 @@ const Contact = () => {
               fontFamily: 'Arial',
             }}
             onClick={handleClick}
+            aria-label="Contactez-nous"
           >
             Contactez-nous !
           </button>
         </div>
       </div>
-      <ContactForm />
+      <ContactForm aria-label="Formulaire de contact" />
       {!cookies.cookieConsent && <CookieConsent />}
-      <Footer />
+      <Footer aria-label="Pied de page" />
     </>
   )
 }

@@ -38,8 +38,8 @@ const Pompe = () => {
   }
   return (
     <>
-      <Navbar scroll={false} />
-      <div className="energy-container">
+      <Navbar scroll={false} aria-label="Menu de navigation" />
+      <div className="energy-container" aria-label="Contenu principal">
         <div className="energy-container-1">
           <div className="energy-container-1-titre">
             <h1>
@@ -58,7 +58,10 @@ const Pompe = () => {
               alt="Climatisation"
               className="energy-img-climatisation-wallpaper"
             />
-            <div className="energy-container-1-explication-text">
+            <div
+              className="energy-container-1-explication-text"
+              aria-label="Informations sur la pompe à chaleur et les sources renouvelables"
+            >
               <p>
                 La PAC tire une partie de son énergie de sources renouvelables :
                 AIR / EAU / SOL. Environ 60% de la chaleur et/ou de l'eau chaude
@@ -75,7 +78,7 @@ const Pompe = () => {
                 de compresseurs à vitesse variable qui réduisent la consommation
                 électrique de la PAC.
               </p>
-              <Link to="/contact">
+              <Link to="/contact" aria-label="Contactez-nous">
                 <button className="energy-container-1-explication-text-button">
                   Contactez-nous
                 </button>
@@ -93,13 +96,17 @@ const Pompe = () => {
               Avant d'initier votre projet d'installation de pompe à chaleur, il
               est essentiel d'examiner attentivement ces points importants.
             </p>
-            <div className="dropdown">
+            <div
+              className="dropdown"
+              aria-label="Options d'installation de la pompe à chaleur"
+            >
               <div className="dropdown-container">
                 {data.map((item, i) => (
                   <div className="dropdown-container-item" key={item.title}>
                     <div
                       className="dropdown-container-item-title"
                       onClick={() => toggle(i)}
+                      aria-label={`Afficher ou masquer ${item.title}`}
                     >
                       <h2>{item.title}</h2>
                       <img
@@ -110,6 +117,7 @@ const Pompe = () => {
                           transform: selected === i ? 'rotate(-180deg)' : null,
                           transition: '0.2s',
                         }}
+                        aria-hidden="true"
                       />
                     </div>
                     <div
@@ -136,7 +144,7 @@ const Pompe = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer aria-label="Pied de page" />
     </>
   )
 }

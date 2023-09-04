@@ -43,7 +43,7 @@ const Climatisation = () => {
   }
   return (
     <>
-      <Navbar scroll={false} />
+      <Navbar scroll={false} aria-label="Menu de navigation" />
       <div className="energy-container">
         <div className="energy-container-1">
           <div className="energy-container-1-titre">
@@ -72,7 +72,7 @@ const Climatisation = () => {
                 investissement judicieux à double effet, vous assurant une
                 rentabilité solide et un confort optimal en toutes saisons.
               </p>
-              <Link to="/contact">
+              <Link to="/contact" aria-label="Contactez-nous">
                 <button className="energy-container-1-explication-text-button">
                   Contactez-nous
                 </button>
@@ -84,10 +84,9 @@ const Climatisation = () => {
           <div className="energy-container-2-group">
             <img
               src={climatisation}
-              alt=" "
+              alt="Climatisation"
               className="energy-container-2-img"
             />
-
             <h1>Climatisation</h1>
             <h2 className="energy-container-2-group-h2">
               Voici quatre solides raisons pour opter pour l'installation d'une
@@ -107,11 +106,14 @@ const Climatisation = () => {
                     <div
                       className="dropdown-container-item-title"
                       onClick={() => toggle(i)}
+                      tabIndex="0"
+                      role="button"
+                      aria-label={`Toggle ${item.title}`}
                     >
                       <h2>{item.title}</h2>
                       <img
                         src={Arrow}
-                        alt="arrow accordeon"
+                        alt="Flèche de l'accordéon"
                         className="dropdown-container-item-title-img"
                         style={{
                           transform: selected === i ? 'rotate(-180deg)' : null,
@@ -139,7 +141,7 @@ const Climatisation = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer aria-label="Pied de page" />
     </>
   )
 }

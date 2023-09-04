@@ -13,15 +13,18 @@ import solar from '../img/solar.png'
 const Project = () => {
   return (
     <>
-      <Navbar scroll={false} />
+      <Navbar scroll={false} aria-label="Menu de navigation" />
       <div className="project">
         <h1>Votre projet en 4 étapes</h1>
       </div>
-      <div className="project-container">
+      <div className="project-container" aria-label="Contenu principal">
         <div className="project-container-first">
           <div className="project-section">
             <img src={bilan} alt="Header" />
-            <div className="project-container-first-textcontainer">
+            <div
+              className="project-container-first-textcontainer"
+              aria-label="Étape 1 : Votre bilan"
+            >
               <h1>1. VOTRE BILAN </h1>
               <h2>Faites-en la demande dès à présent.</h2>
               <p>
@@ -37,6 +40,7 @@ const Project = () => {
               <Link
                 to="/contact"
                 style={{ textDecoration: 'none', color: 'white' }}
+                aria-label="Demandez votre bilan"
               >
                 Demandez votre bilan
               </Link>
@@ -44,7 +48,10 @@ const Project = () => {
           </div>
           <div className="project-section" style={{ marginTop: '1rem' }}>
             <img src={electrique} alt="Header" />
-            <div className="project-container-first-textcontainer">
+            <div
+              className="project-container-first-textcontainer"
+              aria-label="Étape 2 : Visite technique"
+            >
               <h1>2. VISITE TECHNIQUE</h1>
               <h2>Inclus dans notre engagement</h2>
               <p>
@@ -61,6 +68,7 @@ const Project = () => {
               <Link
                 to="/contact"
                 style={{ textDecoration: 'none', color: 'white' }}
+                aria-label="Demandez un devis"
               >
                 Demandez un devis
               </Link>
@@ -69,7 +77,10 @@ const Project = () => {
         </div>
       </div>
 
-      <div className="project-container-middle">
+      <div
+        className="project-container-middle"
+        aria-label="Démarches à effectuer"
+      >
         <div className="project-container-middle-title">
           <h2>Quels sont les démarches à effectuer ?</h2>
         </div>
@@ -108,17 +119,24 @@ const Project = () => {
           <Link
             to="/contact"
             style={{ textDecoration: 'none', color: 'white' }}
+            aria-label="Demandez un devis"
           >
             Demandez un devis
           </Link>
         </button>
       </div>
 
-      <div className="project-container">
+      <div
+        className="project-container"
+        aria-label="Démarches administratives et installation du générateur"
+      >
         <div className="project-container-first">
           <div className="project-section">
             <img src={administratif} alt="Header" />
-            <div className="project-container-first-textcontainer">
+            <div
+              className="project-container-first-textcontainer"
+              aria-label="Étape 3 : Démarches administratives"
+            >
               <h1>3. DÉMARCHES ADMINISTRATIVES </h1>
               <h2>100% PRISES EN CHARGE</h2>
               <p>
@@ -134,6 +152,7 @@ const Project = () => {
               <Link
                 to="/contact"
                 style={{ textDecoration: 'none', color: 'white' }}
+                aria-label="En savoir plus"
               >
                 En savoir plus
               </Link>
@@ -141,7 +160,10 @@ const Project = () => {
           </div>
           <div className="project-section">
             <img src={solar} alt="Header" style={{ marginTop: '-1.5rem' }} />
-            <div className="project-container-first-textcontainer">
+            <div
+              className="project-container-first-textcontainer"
+              aria-label="Étape 4 : Installation du générateur"
+            >
               <h1>4. INSTALLATION DU GÉNÉRATEUR </h1>
               <h2>INSTALLATION EN 1 JOURNÉE</h2>
               <p>
@@ -156,6 +178,7 @@ const Project = () => {
               <Link
                 to="/contact"
                 style={{ textDecoration: 'none', color: 'white' }}
+                aria-label="Des questions ?"
               >
                 Des questions ?
               </Link>
@@ -163,7 +186,7 @@ const Project = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer aria-label="Pied de page" />
     </>
   )
 }

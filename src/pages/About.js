@@ -15,21 +15,21 @@ import equipe from '../img/equipe.jpg'
 const About = () => {
   return (
     <>
-      <Navbar scroll={false} />
+      <Navbar scroll={false} aria-label="Menu de navigation" />
       <div className="about-title">
         <h1>Les énergies renouvelables</h1>
       </div>
       <div className="about-container">
         <div className="about-container-first">
           <div className="section">
-            <img src={presentation} alt="Header" />
+            <img src={presentation} alt="Présentation" />
             <div className="about-container-first-textcontainer">
               <h2>1. Présentation CFR</h2>
               <p>{sections.header}</p>
             </div>
           </div>
           <div className="section">
-            <img src={avantage} alt="Header" />
+            <img src={avantage} alt="Avantages" />
             <div className="about-container-first-textcontainer">
               <h2>2. Les avantages</h2>
               <p>{sections.advantages}</p>
@@ -68,6 +68,7 @@ const About = () => {
           <Link
             to="/contact"
             style={{ textDecoration: 'none', color: 'white' }}
+            aria-label="Demandez un devis"
           >
             Demandez un devis
           </Link>
@@ -77,14 +78,14 @@ const About = () => {
       <div className="about-container">
         <div className="about-container-first">
           <div className="section">
-            <img src={service} alt="Header" />
+            <img src={service} alt="Services" />
             <div className="about-container-first-textcontainer">
               <h2>3. Nos services</h2>
               <p>{sections.services}</p>
             </div>
           </div>
           <div className="section">
-            <img src={equipe} alt="Header" />
+            <img src={equipe} alt="L'équipe" />
             <div className="about-container-first-textcontainer">
               <h2>4. Notre équipe</h2>
               <p>{sections.conclusion}</p>
@@ -92,7 +93,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer aria-label="Pied de page" />
     </>
   )
 }

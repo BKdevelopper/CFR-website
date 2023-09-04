@@ -15,6 +15,7 @@ const Informations = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1000 100"
           preserveAspectRatio="none"
+          aria-hidden="true"
         >
           <path
             className="elementor-shape-fill"
@@ -35,7 +36,11 @@ const Informations = () => {
         <div className="container-information-zone-left">
           <div className="container-information-zone-left-top">
             <Link to="/solaire">
-              <img src={photovoltaique} alt=" " className="information-img" />
+              <img
+                src={photovoltaique}
+                alt="L'énergie solaire"
+                className="information-img"
+              />
               <h1 className="information-h1">PHOTOVOLTAÏQUE</h1>
               <h2 className="information-h2">
                 L’énergie produite grâce au soleil
@@ -44,7 +49,11 @@ const Informations = () => {
           </div>
           <div className="container-information-zone-left-bottom">
             <Link to="/isolation">
-              <img src={isolation} alt=" " className="information-img" />
+              <img
+                src={isolation}
+                alt="L'isolation"
+                className="information-img"
+              />
               <h1 className="information-h1">ISOLATION</h1>
               <h2 className="information-h2">L’énergie économisée</h2>
             </Link>
@@ -53,14 +62,22 @@ const Informations = () => {
         <div className="container-information-zone-middle">
           <div className="container-information-zone-middle-top">
             <Link to="/climatisation">
-              <img src={climatisation} alt=" " className="information-img" />
+              <img
+                src={climatisation}
+                alt="Climatisation"
+                className="information-img"
+              />
               <h1 className="information-h1">CLIMATISATION</h1>
               <h2 className="information-h2">Le confort été hiver</h2>
             </Link>
           </div>
           <div className="container-information-zone-middle-bottom">
             <Link to="/pompe-a-chaleur">
-              <img src={pompe} alt=" " className="information-img" />
+              <img
+                src={pompe}
+                alt="Pompe à chaleur"
+                className="information-img"
+              />
               <h1 className="information-h1">POMPE À CHALEUR</h1>
               <h2 className="information-h2">
                 L’énergie produite par l’air et l’eau
@@ -71,13 +88,21 @@ const Informations = () => {
         <div className="container-information-zone-right">
           <div className="container-information-zone-right-top">
             <Link to="/thermodynamique">
-              <img src={thermodynamique} alt=" " className="information-img" />
+              <img
+                src={thermodynamique}
+                alt="Ballon thermodynamique"
+                className="information-img"
+              />
               <h1 className="information-h1">BALLON THERMODYNAMIQUE</h1>
               <h2 className="information-h2">Eau Chaude Sanitaire maîtrisée</h2>
             </Link>
           </div>
           <div className="container-information-zone-right-bottom">
-            <img src={chiffre} alt=" " className="information-img" />
+            <img
+              src={chiffre}
+              alt="Bilan énergétique"
+              className="information-img"
+            />
             <h1 className="information-h1">BILAN ÉNERGÉTIQUE</h1>
             <h2 className="information-h2">
               Étudier et comprendre avant d’investir.

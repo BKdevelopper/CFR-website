@@ -9,6 +9,7 @@ const House = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1000 100"
           preserveAspectRatio="none"
+          aria-hidden="true"
         >
           <path
             className="elementor-shape-fill"
@@ -29,7 +30,7 @@ const House = () => {
         </h3>
       </div>
       <div className="container-house-img">
-        <img src={maison} className="maison" alt="" />
+        <img src={maison} className="maison" alt="Une maison" />
       </div>
     </div>
   )

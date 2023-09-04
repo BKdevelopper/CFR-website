@@ -24,128 +24,283 @@ const Sponsors = () => {
   return (
     <div className="container-partner">
       <h2 className="partner-title">Partenaires</h2>
-      <div className="sslider">
+      <div className="sslider" aria-label="Logos de partenaires">
         <div className="sslide-track">
           <div className="sslide">
-            <img src={logo1} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo1}
+              alt="Logo du partenaire 1"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo2} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo2}
+              alt="Logo du partenaire 2"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo3} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo3}
+              alt="Logo du partenaire 3"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo4} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo4}
+              alt="Logo du partenaire 4"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo5} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo5}
+              alt="Logo du partenaire 5"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo6} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo6}
+              alt="Logo du partenaire 6"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo7} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo7}
+              alt="Logo du partenaire 7"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo8} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo8}
+              alt="Logo du partenaire 8"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo9} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo9}
+              alt="Logo du partenaire 9"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo10} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo10}
+              alt="Logo du partenaire 10"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo11} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo11}
+              alt="Logo du partenaire 11"
+              className="sslide-img"
+            />
           </div>
 
           <div className="sslide">
-            <img src={logo1} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo1}
+              alt="Logo du partenaire 1"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo2} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo2}
+              alt="Logo du partenaire 2"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo3} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo3}
+              alt="Logo du partenaire 3"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo4} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo4}
+              alt="Logo du partenaire 4"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo5} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo5}
+              alt="Logo du partenaire 5"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo6} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo6}
+              alt="Logo du partenaire 6"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo7} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo7}
+              alt="Logo du partenaire 7"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo8} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo8}
+              alt="Logo du partenaire 8"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo9} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo9}
+              alt="Logo du partenaire 9"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo10} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo10}
+              alt="Logo du partenaire 10"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={logo11} alt="sponsor" className="sslide-img" />
+            <img
+              src={logo11}
+              alt="Logo du partenaire 11"
+              className="sslide-img"
+            />
           </div>
         </div>
       </div>
       <h2 className="partner-title">Les qualifications de nos partenaires</h2>
-      <div className="sslider">
+      <div
+        className="sslider"
+        aria-label="Logos de qualifications de partenaires"
+      >
         <div className="sslide-track">
           <div className="sslide">
-            <img src={qualif1} alt="sponsor" className="sslide-img" />
+            <img
+              src={qualif1}
+              alt="Logo de qualification 1"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={qualif2} alt="sponsor" className="sslide-img" />
+            <img
+              src={qualif2}
+              alt="Logo de qualification 2"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={qualif3} alt="sponsor" className="sslide-img" />
+            <img
+              src={qualif3}
+              alt="Logo de qualification 3"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={qualif4} alt="sponsor" className="sslide-img" />
+            <img
+              src={qualif4}
+              alt="Logo de qualification 4"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={qualif5} alt="sponsor" className="sslide-img" />
+            <img
+              src={qualif5}
+              alt="Logo de qualification 5"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={qualif6} alt="sponsor" className="sslide-img" />
+            <img
+              src={qualif6}
+              alt="Logo de qualification 6"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={qualif7} alt="sponsor" className="sslide-img" />
+            <img
+              src={qualif7}
+              alt="Logo de qualification 7"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={qualif8} alt="sponsor" className="sslide-img" />
+            <img
+              src={qualif8}
+              alt="Logo de qualification 8"
+              className="sslide-img"
+            />
           </div>
 
           <div className="sslide">
-            <img src={qualif1} alt="sponsor" className="sslide-img" />
+            <img
+              src={qualif1}
+              alt="Logo de qualification 1"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={qualif2} alt="sponsor" className="sslide-img" />
+            <img
+              src={qualif2}
+              alt="Logo de qualification 2"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={qualif3} alt="sponsor" className="sslide-img" />
+            <img
+              src={qualif3}
+              alt="Logo de qualification 3"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={qualif4} alt="sponsor" className="sslide-img" />
+            <img
+              src={qualif4}
+              alt="Logo de qualification 4"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={qualif5} alt="sponsor" className="sslide-img" />
+            <img
+              src={qualif5}
+              alt="Logo de qualification 5"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={qualif6} alt="sponsor" className="sslide-img" />
+            <img
+              src={qualif6}
+              alt="Logo de qualification 6"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={qualif7} alt="sponsor" className="sslide-img" />
+            <img
+              src={qualif7}
+              alt="Logo de qualification 7"
+              className="sslide-img"
+            />
           </div>
           <div className="sslide">
-            <img src={qualif8} alt="sponsor" className="sslide-img" />
+            <img
+              src={qualif8}
+              alt="Logo de qualification 8"
+              className="sslide-img"
+            />
           </div>
         </div>
       </div>

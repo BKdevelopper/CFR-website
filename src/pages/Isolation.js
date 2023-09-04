@@ -51,8 +51,8 @@ const Isolation = () => {
   }
   return (
     <>
-      <Navbar scroll={false} />
-      <div className="energy-container">
+      <Navbar scroll={false} aria-label="Menu de navigation" />
+      <div className="energy-container" aria-label="Contenu principal">
         <div className="energy-container-1">
           <div className="energy-container-1-titre">
             <h1>Isoler son logement</h1>
@@ -68,7 +68,10 @@ const Isolation = () => {
               alt="Climatisation"
               className="energy-img-climatisation-wallpaper"
             />
-            <div className="energy-container-1-explication-text">
+            <div
+              className="energy-container-1-explication-text"
+              aria-label="Informations sur l'isolation du logement"
+            >
               <p>
                 Les habitations qui consomment excessivement de l'énergie
                 devront être sérieusement examinées en ce qui concerne leur
@@ -85,7 +88,7 @@ const Isolation = () => {
                 mais aussi garantir un confort de vie amélioré tout au long de
                 l'année et sur le long terme.
               </p>
-              <Link to="/contact">
+              <Link to="/contact" aria-label="Contactez-nous">
                 <button className="energy-container-1-explication-text-button">
                   Contactez-nous
                 </button>
@@ -106,13 +109,14 @@ const Isolation = () => {
               différentes options sont disponibles pour renforcer l'efficacité
               énergétique de votre domicile.
             </p>
-            <div className="dropdown">
+            <div className="dropdown" aria-label="Options d'isolation">
               <div className="dropdown-container">
                 {data.map((item, i) => (
                   <div className="dropdown-container-item" key={item.title}>
                     <div
                       className="dropdown-container-item-title"
                       onClick={() => toggle(i)}
+                      aria-label={`Afficher ou masquer ${item.title}`}
                     >
                       <h2>{item.title}</h2>
                       <img
@@ -123,6 +127,7 @@ const Isolation = () => {
                           transform: selected === i ? 'rotate(-180deg)' : null,
                           transition: '0.2s',
                         }}
+                        aria-hidden="true"
                       />
                     </div>
                     <div
@@ -146,7 +151,7 @@ const Isolation = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer aria-label="Pied de page" />
     </>
   )
 }

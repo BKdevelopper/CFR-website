@@ -32,7 +32,7 @@ const Footer = () => {
           <ul>
             <li>
               <FiMail />
-              <a href="mailto:contact@cfr.fr">contact@moncfr.fr</a>
+              <a href="mailto:contact@moncfr.fr">contact@moncfr.fr</a>
             </li>
             <li>
               <FiPhone />
@@ -57,28 +57,11 @@ const Footer = () => {
                 href="https://www.facebook.com/profile.php?id=61550349755738"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Suivez-nous sur Facebook"
               >
                 <FiFacebook />
               </a>
             </li>
-            {/* <li>
-              <a
-                href="https://www.instagram.com/cfr.energy"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FiInstagram />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/company/cfr-energy"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FiLinkedin />
-              </a>
-            </li> */}
           </ul>
         </div>
       </div>

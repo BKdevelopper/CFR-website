@@ -36,17 +36,18 @@ const Thermodynamique = () => {
   }
   return (
     <>
-      <Navbar scroll={false} />
-      <div className="energy-container">
+      <Navbar scroll={false} aria-label="Menu de navigation" />
+      <div className="energy-container" aria-label="Contenu principal">
         <div className="energy-container-1">
           <div className="energy-container-1-titre">
             <h1>
-              Chauffe eau thermodynamique: économique, écologique et rentable
+              Chauffe-eau thermodynamique : économique, écologique et rentable
             </h1>
             <img
               src={clima}
               alt="Climatisation"
               className="energy-img-climatisation"
+              aria-hidden="true"
             />
           </div>
           <div className="energy-container-1-explication">
@@ -54,6 +55,7 @@ const Thermodynamique = () => {
               src={climatisationwallpaper}
               alt="Climatisation"
               className="energy-img-climatisation-wallpaper"
+              aria-hidden="true"
             />
             <div className="energy-container-1-explication-text">
               <p>
@@ -69,7 +71,10 @@ const Thermodynamique = () => {
                 chaude constante et efficiente.
               </p>
               <Link to="/contact">
-                <button className="energy-container-1-explication-text-button">
+                <button
+                  className="energy-container-1-explication-text-button"
+                  aria-label="Contactez-nous"
+                >
                   Contactez-nous
                 </button>
               </Link>
@@ -82,9 +87,10 @@ const Thermodynamique = () => {
               src={thermodynamique}
               alt=" "
               className="energy-container-2-img"
+              aria-hidden="true"
             />
 
-            <h1>Chauffe eau thermodynamique</h1>
+            <h1>Chauffe-eau thermodynamique</h1>
             <h2 className="energy-container-2-group-h2">Les avantages</h2>
             <p>
               Avant de vous lancer dans le processus d'installation d'une
@@ -100,6 +106,7 @@ const Thermodynamique = () => {
                     <div
                       className="dropdown-container-item-title"
                       onClick={() => toggle(i)}
+                      aria-label={`Afficher ${item.title}`}
                     >
                       <h2>{item.title}</h2>
                       <img
@@ -110,11 +117,13 @@ const Thermodynamique = () => {
                           transform: selected === i ? 'rotate(-180deg)' : null,
                           transition: '0.2s',
                         }}
+                        aria-hidden="true"
                       />
                     </div>
                     <div
                       className={selected === i ? 'boxx show' : 'boxx'}
                       key={i.content}
+                      aria-label={item.title}
                     >
                       {item.content}
                     </div>
@@ -136,7 +145,7 @@ const Thermodynamique = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer aria-label="Pied de page" />
     </>
   )
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './CSS/cookie.css'
 import { useCookies } from 'react-cookie'
 const CookieConsent = () => {
@@ -13,7 +13,9 @@ const CookieConsent = () => {
         continuant, vous acceptez notre utilisation des cookies.
         <a href={'/mention-legal'}>En savoir plus.</a>
       </p>
-      <button onClick={giveCookieConsent}>Accepter</button>
+      <button onClick={giveCookieConsent} aria-label="Accepter les cookies">
+        Accepter
+      </button>
     </div>
   )
 }

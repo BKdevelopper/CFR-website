@@ -101,7 +101,7 @@ const ContactForm = () => {
   return (
     <>
       <div className="contact-form-container" id="contactform">
-        Contact
+        <h2>Contact</h2>
       </div>
       {submitSuccess ? (
         <p>Nous vous remercions pour votre envoi !</p>
@@ -120,6 +120,7 @@ const ContactForm = () => {
                 value={formData.first_name}
                 placeholder="Prénom"
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="form-group-name-nom">
@@ -134,6 +135,7 @@ const ContactForm = () => {
                 value={formData.last_name}
                 onChange={handleChange}
                 placeholder="Nom"
+                required
               />
             </div>
           </div>
@@ -150,6 +152,7 @@ const ContactForm = () => {
                 value={formData.city}
                 onChange={handleChange}
                 placeholder="Ville"
+                required
               />
             </div>
             <div className="form-group-info-email">
@@ -164,6 +167,7 @@ const ContactForm = () => {
                 value={formData.email}
                 placeholder="Email"
                 onChange={handleChange}
+                required
               />
             </div>
           </div>
@@ -179,6 +183,7 @@ const ContactForm = () => {
               value={formData.subject}
               onChange={handleChange}
               placeholder="Sujet"
+              required
             />
           </div>
           <div className="form-group-message">
@@ -192,11 +197,13 @@ const ContactForm = () => {
               value={formData.message}
               onChange={handleChange}
               placeholder="Message"
+              required
             ></textarea>
           </div>
           <ReCAPTCHA
             sitekey="6LeeiKwnAAAAABnT9ZWv4I-WQgTuQANATYUqNNZB"
             onChange={onChange}
+            aria-label="Captcha"
           />
           {recaptchaError && <p style={{ color: 'red' }}>{recaptchaError}</p>}
           {submitError && <p style={{ color: 'red' }}>{submitError}</p>}
