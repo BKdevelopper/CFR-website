@@ -203,7 +203,6 @@ const ContactForm = () => {
           <ReCAPTCHA
             sitekey="6LeeiKwnAAAAABnT9ZWv4I-WQgTuQANATYUqNNZB"
             onChange={onChange}
-            aria-label="Captcha"
           />
           {recaptchaError && <p style={{ color: 'red' }}>{recaptchaError}</p>}
           {submitError && <p style={{ color: 'red' }}>{submitError}</p>}
