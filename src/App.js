@@ -14,13 +14,13 @@ import Pompe from './pages/Pompe'
 import Isolation from './pages/Isolation'
 
 export default function App() {
-  // useEffect(() => {
-  //   // Vérifier si le protocole est HTTPS
-  //   if (window.location.protocol !== 'https:') {
-  //     // Rediriger vers HTTPS
-  //     window.location.href = `https://${window.location.host}${window.location.pathname}`
-  //   }
-  // }, [])
+  useEffect(() => {
+    // Vérifier si le protocole est HTTPS
+    if (window.location.protocol !== 'https:') {
+      // Rediriger vers HTTPS
+      window.location.href = `https://${window.location.host}${window.location.pathname}`
+    }
+  }, [])
 
   return (
     <div className="App">
