@@ -6,6 +6,9 @@ const CookieConsent = () => {
   const giveCookieConsent = () => {
     setCookie('cookieConsent', true, { path: '/' })
   }
+  if (cookies.cookieConsent) {
+    return null // Do not render anything
+  }
   return (
     <div className="cookie-consent">
       <p>

@@ -82,7 +82,7 @@ const Project = () => {
         aria-label="Démarches à effectuer"
       >
         <div className="project-container-middle-title">
-          <h2>Quels sont les démarches à effectuer ?</h2>
+          <h2>Quels sont les démarches effectuées ?</h2>
         </div>
         <div className="project-container-middle-text">
           <div className="project-container-middle-text-1">

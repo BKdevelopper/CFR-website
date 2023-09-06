@@ -40,7 +40,7 @@ const About = () => {
 
       <div className="about-container-middle">
         <div className="about-container-middle-title">
-          <h2>Nos services incluent</h2>
+          <h2>Les énergies renouvelables</h2>
         </div>
         <div className="about-container-middle-text">
           <div className="about-container-middle-text-1">

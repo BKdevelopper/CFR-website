@@ -60,7 +60,11 @@
   background-color: #ed7703;
 }
 @media screen and (max-width: 1280px) {
-  .popup-container {
-    display: none;
+  .popup-content {
+    width: 100%;
+  }
+  .popup-image {
+    max-width: 100%;
+    height: 100%;
   }
 }
