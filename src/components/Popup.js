@@ -21,7 +21,11 @@ const Popup = () => {
   return showPopup ? (
     <div className="popup-container">
       <div className="popup-content">
-        <button className="close-button" onClick={closePopup}>
+        <button
+          className="close-button"
+          onClick={closePopup}
+          aria-label="Close popup"
+        >
           <FiX />
         </button>
         {/* Contenu de votre popup publicitaire */}

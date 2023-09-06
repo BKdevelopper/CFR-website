@@ -104,6 +104,10 @@ const PhotoGallery = () => {
               className="image"
               alt={`Réalisation ${index + 1}`}
               onClick={() => openModal(photo)}
+              style={{
+                width: '476 px',
+                height: '300 px',
+              }}
             />
 
             <MdZoomIn className="zoom-icon" onClick={() => openModal(photo)} />
